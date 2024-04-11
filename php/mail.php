@@ -17,5 +17,4 @@ try {
     
 }
 
-echo "Thank You!";
 ?>
