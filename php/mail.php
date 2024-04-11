@@ -3,12 +3,12 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$formcontent=" From: $name  \n Message: $message";
+$formcontent=" From: $name \n Email: $email \n Message: $message";
 $subject = "Contact Form";
-$mailheader = "From: icpedrosa@swiftyresults.com \r\n";
+$mailheader = "From: $email \r\n";
 
 try {
-    mail($email, $subject, $formcontent, $mailheader) or die("Error!");
+    mail("icpedrosa@swiftyresults.com", $subject, $formcontent, $mailheader) or die("Error!");
 } catch (Exception $ex) {
 	// jump to this part
 	// if an exception occurred
