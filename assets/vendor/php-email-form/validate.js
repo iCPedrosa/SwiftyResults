@@ -57,21 +57,25 @@
     })
     .then(response => {
       console.log(response);
+      thisForm.querySelector('.loading').classList.remove('d-block');
+      console.log(data);
       if( response.ok ) {
+        thisForm.querySelector('.sent-message').classList.add('d-block');
+        thisForm.reset(); 
         return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
     .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      console.log(data);
-      if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
-      } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
-      }
+      // thisForm.querySelector('.loading').classList.remove('d-block');
+      // console.log(data);
+      // if (data.trim() == 'OK') {
+      //   thisForm.querySelector('.sent-message').classList.add('d-block');
+      //   thisForm.reset(); 
+      // } else {
+      //   throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+      // }
     })
     .catch((error) => {
       displayError(thisForm, error);
