@@ -1261,6 +1261,7 @@
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
                   <p>icpedrosa@swiftyresults.com</p>
+                  <p>bernardo.melo@swiftyresults.com</p>
                 </div>
               </div>
               <div class="col-md-6">
