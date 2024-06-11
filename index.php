@@ -1417,7 +1417,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script> 
-  <?php include_once("analyticstracking.php") ?>
+  <?php include_once("php/analyticstracking.php") ?>
 </body>
 
 </html>
