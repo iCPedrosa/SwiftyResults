@@ -1340,7 +1340,7 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
+              <img src="assets/img/logoswiftyresults.png" alt="">
               <span>SwiftyResults</span>
             </a>
             <p>Where success is just a click away.</p>
