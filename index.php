@@ -957,7 +957,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -969,7 +969,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -985,7 +985,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -997,9 +997,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -1039,7 +1039,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
