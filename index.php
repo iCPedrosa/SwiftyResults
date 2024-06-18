@@ -600,7 +600,7 @@
               <i class="ri-discuss-line icon"></i>
               <h3>Shopify Solutions</h3>
               <p>Transform your e-commerce experience with tailored Shopify solutions. Streamline your store setup, enhance user experience, and boost sales.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="#pricing" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           
@@ -609,7 +609,7 @@
               <i class="ri-discuss-line icon"></i>
               <h3>Website Development</h3>
               <p>From concept to launch, we craft visually stunning and user-friendly websites. Elevate your online presence with our expert development services.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           
@@ -618,7 +618,7 @@
               <i class="ri-discuss-line icon"></i>
               <h3>Marketing Automation</h3>
               <p>Maximize efficiency and drive growth with marketing automation solutions. Engage customers, nurture leads, and analyze performance seamlessly.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           
@@ -627,7 +627,7 @@
               <i class="ri-discuss-line icon"></i>
               <h3>CRM Implementation</h3>
               <p>Empower your team and strengthen customer relationships with customized CRM solutions. Unlock insights, streamline processes, and drive revenue.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           
@@ -636,7 +636,7 @@
               <i class="ri-discuss-line icon"></i>
               <h3>SMS and Email Marketing</h3>
               <p>Reach your audience effectively with targeted SMS and email marketing campaigns. Drive engagement, conversions, and brand loyalty effortlessly.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           
@@ -645,7 +645,7 @@
               <i class="ri-discuss-line icon"></i>
               <h3>Custom Solutions</h3>
               <p>Have a unique need? Let's discuss. Our team specializes in crafting bespoke digital solutions tailored to your specific requirements and goals.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           
@@ -678,7 +678,7 @@
                 <li>Theme installation and customization</li>
                 <li>Payment gateway integration</li>
               </ul>
-              <a href="#" class="btn-buy">Get Started</a>
+              <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
           
@@ -694,7 +694,7 @@
                 <li>Product upload assistance</li>
                 <li>Basic SEO optimization</li>
               </ul>
-              <a href="#" class="btn-buy">Get Started</a>
+              <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
           
@@ -709,7 +709,7 @@
                 <li>Winback and Email campaigns</li>
                 <li>Priority support</li>
               </ul>
-              <a href="#" class="btn-buy">Get Started</a>
+              <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
           
@@ -724,7 +724,7 @@
                 <li>API integrations</li>
                 <li>Ongoing support</li>
               </ul>
-              <a href="#" class="btn-buy">Get Started</a>
+              <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
           
