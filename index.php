@@ -140,14 +140,14 @@
       <div class="container" data-aos="fade-up">
         <div class="row gx-0">
 
-          <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
+          <div class="col-lg-8 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content text-center">
               <h3>Who We Are</h3>
               <h2>We're all about creating amazing digital solutions that help your business shine online.</h2>
               <p>
               Whether you're looking for a stunning website, a seamless CRM system, or some marketing magic, we've got you covered. What sets us apart? Our friendly team's here to partner with you every step of the way. Let's make your online presence shine. <br/><br/>Welcome to SwiftyResults, where success is just a click away.
               </p>
-              <div class="text-center text-lg-start">
+              <div class="text-center text-lg-start justify-content-center">
                 <a href="#services" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Read More</span>
                   <i class="bi bi-arrow-right"></i>
