@@ -232,26 +232,26 @@
               </div>
             </div>
           </div>
-<!-- 
+
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/marcus-wagner1"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
+                <h4>Marcus Wagner</h4>
+                <span>Director, Business Development</span>
+                <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes, and build partnerships, ensuring your business thrives. Your success is my mission."</p>
               </div>
             </div>
           </div>
--->
+
         </div>
 
       </div>
