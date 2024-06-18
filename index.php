@@ -114,8 +114,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Establish Your Digital Presence with a Top Rated Agency</b></h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Establishing a digital presence is crucial for small to medium size businesses. While local traffic and word of mouth help, an online presence builds trust and elevates your business. Take this step today to move from good to great.</h2>
+          <h1 data-aos="fade-up">From Good to Great with SwiftyResults</b></h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">We build and have built brands, your success is our business. Establishing a digital presence is necessary to enable that. Take this step today.</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
               <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
@@ -850,7 +850,7 @@
 
         <header class="section-header">
           <!-- <h2>Contact</h2> -->
-          <p>Schedule Your Free Appointment</p>
+          <p>Schedule Your Free Consultation</p>
         </header>
 
         <div class="row gy-4 justify-content-center">
