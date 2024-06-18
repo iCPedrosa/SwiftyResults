@@ -849,8 +849,8 @@
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
+          <!-- <h2>Contact</h2> -->
+          <p>Schedule Your Free Appointment</p>
         </header>
 
         <div class="row gy-4 justify-content-center">
@@ -879,7 +879,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Submit</button>
                 </div>
 
               </div>
