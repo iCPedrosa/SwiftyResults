@@ -14,7 +14,7 @@ function format_ics_datetime($datetime) {
 }
 
 // Função para gerar o conteúdo do arquivo .ics
-function generate_ics_file($email, $datetime, $description) {
+function generate_ics_file($to,$email, $datetime, $description) {
     $start_date = format_ics_datetime($datetime);
     $end_date = (new DateTime($start_date))->modify('+15 minutes')->format('Ymd\THis');
 
@@ -22,7 +22,7 @@ function generate_ics_file($email, $datetime, $description) {
 VERSION:2.0
 PRODID:-//Your Company//NONSGML Event//EN
 BEGIN:VEVENT
-UID:" . md5(uniqid(mt_rand(), true)) . "@yourdomain.com
+UID:" . md5(uniqid(mt_rand(), true)) . "@swiftyresults.com
 DTSTAMP:" . gmdate('Ymd\THis\Z') . "
 DTSTART:$start_date
 DTEND:$end_date
@@ -35,7 +35,7 @@ END:VCALENDAR";
 }
 
 // Gerar o conteúdo do arquivo .ics
-$ics_content = generate_ics_file($email, $datetime, $description);
+$ics_content = generate_ics_file($to,$email, $datetime, $description);
 
 // Headers para o email
 $headers = "From: $from_email\r\n";
