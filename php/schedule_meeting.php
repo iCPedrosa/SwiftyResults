@@ -6,7 +6,6 @@ $description = $_POST['description'];
 $subject = "Schedule Meeting";
 $to = "icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com";
 $from_email = "no-reply@swiftyresults.com";  // Você pode usar um email de envio fixo
-$headers_to = $to . ", " . $email;  // Inclui o cliente na lista de destinatários
 
 // Função para formatar a data e hora no formato correto para o arquivo .ics
 function format_ics_datetime($datetime) {
@@ -15,9 +14,15 @@ function format_ics_datetime($datetime) {
 }
 
 // Função para gerar o conteúdo do arquivo .ics
-function generate_ics_file($email, $datetime, $description) {
+function generate_ics_file($to, $email, $datetime, $description) {
     $start_date = format_ics_datetime($datetime);
     $end_date = (new DateTime($datetime))->modify('+15 minutes')->format('Ymd\THis');
+
+    // Lista de participantes (destinatários internos da SwiftyResults)
+    $attendees = "";
+    foreach (explode(', ', $to) as $attendee) {
+        $attendees .= "ATTENDEE;CN=$attendee:mailto:$attendee\r\n";
+    }
 
     $output = "BEGIN:VCALENDAR
 VERSION:2.0
@@ -29,6 +34,7 @@ DTSTART:$start_date
 DTEND:$end_date
 SUMMARY:Meeting with SwiftyResults.com
 ORGANIZER;CN=Customer:mailto:$email
+$attendees
 DESCRIPTION:$description
 END:VEVENT
 END:VCALENDAR";
@@ -37,7 +43,7 @@ END:VCALENDAR";
 }
 
 // Gerar o conteúdo do arquivo .ics
-$ics_content = generate_ics_file($email, $datetime, $description);
+$ics_content = generate_ics_file($to, $email, $datetime, $description);
 
 // Headers para o email
 $headers = "From: $from_email\r\n";
@@ -48,7 +54,7 @@ $headers .= "Content-Transfer-Encoding: 7bit\r\n";
 
 // Enviar o email com o arquivo .ics anexado
 try {
-    mail($headers_to, $subject, $ics_content, $headers);
+    mail($to . ', ' . $email, $subject, $ics_content, $headers);
     header('HTTP/1.1 200 OK');
     echo "Email sent successfully!";
 } catch (Exception $ex) {
