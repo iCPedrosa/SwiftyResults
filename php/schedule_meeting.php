@@ -1,102 +1,65 @@
 <?php
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-// Dados do formulário
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-
-// Conteúdo do e-mail
-$formcontent = "From: $name\nEmail: $email\nMessage: $message";
-$subject = "Contact Form Submission";
-$mailheader = "From: $email\r\n";
-
-// Envia o e-mail
-try {
-    mail("icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com", $subject, $formcontent, $mailheader);
-    echo 'Message sent successfully.';
-} catch (Exception $ex) {
-    echo "An error occurred: $ex";
-    // Pode adicionar mais tratamento de erro aqui se necessário
-}
-
-// Código para criação e envio do arquivo Excel
-try {
-    // Obtém dados do formulário
-    $description = $_POST['description'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
     $datetime = $_POST['datetime'];
-    $duration = $_POST['duration'] ?? 15;
+    $description = $_POST['description'];
+    $icon_file = $_FILES['icon_file'];
 
-    // Divide datetime em data e hora
-    $date = date('Y-m-d', strtotime($datetime));
-    $time = date('H:i:s', strtotime($datetime));
+    // Função para gerar o conteúdo do arquivo ICO
+    function generateIconFile($email, $datetime, $description, $icon_file) {
+        // Cabeçalho ICO
+        $header = pack('CCCCvv',
+            0x00,   // Tipo de arquivo (0x00 para ICO)
+            0x01,   // Número de ícones no arquivo (1 para um único ícone)
+            0x00,   // Largura (0 para ícone 32x32)
+            0x00,   // Altura (0 para ícone 32x32)
+            0x01,   // Número de cores na paleta (1 para ícone 32x32)
+            0x20    // Tamanho dos dados do ícone em bytes (32x32 = 1024 bytes)
+        );
 
-    // Cria uma nova planilha
-    $spreadsheet = new Spreadsheet();
-    $sheet = $spreadsheet->getActiveSheet();
-    $sheet->setTitle('Schedule a meeting with us');
+        // Dados do ícone (32x32) - exemplo simples, substitua com seus dados
+        $icon_data = "\x00\x00\x01\x00\x01\x00\x10\x10" . // Ícone 32x32 com uma cor
+                     str_repeat("\x00", 1024); // Dados de pixels, aqui está vazio
 
-    // Define os cabeçalhos
-    $sheet->setCellValue('A1', 'Title');
-    $sheet->setCellValue('B1', 'Description');
-    $sheet->setCellValue('C1', 'Date');
-    $sheet->setCellValue('D1', 'Hour');
-    $sheet->setCellValue('E1', 'Duration (minutes)');
-    $sheet->setCellValue('F1', 'Email'); // Adiciona o cabeçalho do email
+        // Combine o cabeçalho com os dados do ícone
+        $icon_content = $header . $icon_data;
 
-    // Adiciona os dados da reunião
-    $sheet->setCellValue('A2', 'Consultation with SwiftyResults');
-    $sheet->setCellValue('B2', $description);
-    $sheet->setCellValue('C2', $date);
-    $sheet->setCellValue('D2', $time);
-    $sheet->setCellValue('E2', $duration);
-    $sheet->setCellValue('F2', $email); // Adiciona o email à célula correspondente
+        return $icon_content;
+    }
 
-    // Define o nome do arquivo
-    $filename = 'Consultation_with_SwiftyResults_schedule.xlsx'; // Nome do arquivo
+    // Gera o conteúdo do arquivo ICO
+    $icon_content = generateIconFile($email, $datetime, $description, $icon_file);
 
-    // Salva o arquivo temporariamente
-    $tempFilePath = tempnam(sys_get_temp_dir(), 'meeting_') . '.xlsx';
-    $writer = new Xlsx($spreadsheet);
-    $writer->save($tempFilePath);
+    // Cabeçalhos MIME para o e-mail
+    $boundary = md5(time());
+    $headers = "From: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
 
-    // Envia o e-mail com o arquivo anexado
-    $mail = new PHPMailer(true);
-    
-    $mailHost = 'smtp.example.com'; // Substitua pelo seu servidor SMTP
-    $mailUsername = 'your-email@example.com'; // Substitua pelo seu email
-    $mailPassword = 'your-email-password'; // Substitua pela sua senha de email
-    $mailPort = 587; // Porta do servidor SMTP
+    // Corpo do e-mail
+    $message_body = "--$boundary\r\n";
+    $message_body .= "Content-Type: text/plain; charset=\"UTF-8\"\r\n";
+    $message_body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+    $message_body .= "Email: $email\nDatetime: $datetime\nDescription: $description\r\n\r\n";
+    $message_body .= "--$boundary\r\n";
+    $message_body .= "Content-Type: application/octet-stream; name=\"icon.ico\"\r\n";
+    $message_body .= "Content-Disposition: attachment; filename=\"icon.ico\"\r\n";
+    $message_body .= "Content-Transfer-Encoding: base64\r\n";
+    $message_body .= "\r\n";
+    $message_body .= chunk_split(base64_encode($icon_content))."\r\n";
+    $message_body .= "--$boundary--";
 
-    $mail->isSMTP();
-    $mail->Host = $mailHost;
-    $mail->SMTPAuth = true;
-    $mail->Username = $mailUsername;
-    $mail->Password = $mailPassword;
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = $mailPort;
+    $subject = "Generated ICO File";
 
-    // Define remetente e destinatário
-    $mail->setFrom('icpedrosa@swiftyresults.com', 'SwiftyResults'); // Remetente
-    $mail->addAddress($email); // Destinatário
-
-    // Conteúdo do e-mail
-    $mail->isHTML(true);
-    $mail->Subject = 'Your Meeting Schedule';
-    $mail->Body    = 'Here is the schedule for your meeting. Please find the attached file for details.';
-    $mail->addAttachment($tempFilePath, $filename);
-
-    // Envia o e-mail
-    $mail->send();
-    echo 'Message has been sent';
-
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // Envio do e-mail
+    try {
+        mail("icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com", $subject, $message_body, $headers);
+        header('HTTP/1.1 200 OK');
+        echo "E-mail enviado com sucesso!";
+    } catch (Exception $ex) {
+        echo "Erro ao enviar o e-mail: $ex";
+    }
+} else {
+    echo "Acesso direto não permitido.";
 }
-
-// Remove o arquivo temporário
-unlink($tempFilePath);
 ?>
