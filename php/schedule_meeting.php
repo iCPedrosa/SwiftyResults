@@ -5,7 +5,7 @@ $description = $_POST['description'];
 
 $subject = "Schedule Meeting";
 $to = "icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com";
-$from_email = "no-reply@swiftyresults.com";  // Email fixo de envio
+$from_email = "no-reply@swiftyresults.com";  // Você pode usar um email de envio fixo
 $headers_to = $to . ", " . $email;  // Inclui o cliente na lista de destinatários
 
 // Função para formatar a data e hora no formato correto para o arquivo .ics
@@ -24,13 +24,10 @@ function generate_ics_file($to, $email, $datetime, $description) {
     foreach (explode(', ', $to) as $attendee) {
         $attendees .= "ATTENDEE;CN=SwiftyResults;RSVP=TRUE:mailto:$attendee\r\n";
     }
-    // Adiciona o cliente como participante
-    $attendees .= "ATTENDEE;CN=Customer;RSVP=TRUE:mailto:$email\r\n";
 
     $output = "BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Swifty Results//NONSGML Event//EN
-CALSCALE:GREGORIAN
 METHOD:REQUEST
 BEGIN:VEVENT
 UID:" . md5(uniqid(mt_rand(), true)) . "@swiftyresults.com
@@ -38,7 +35,7 @@ DTSTAMP:" . gmdate('Ymd\THis\Z') . "
 DTSTART:$start_date
 DTEND:$end_date
 SUMMARY:Meeting with SwiftyResults.com
-ORGANIZER;CN=SwiftyResults:mailto:no-reply@swiftyresults.com
+ORGANIZER;CN=Customer:mailto:$email
 $attendees
 DESCRIPTION:$description
 STATUS:CONFIRMED
@@ -55,7 +52,6 @@ $ics_content = generate_ics_file($to, $email, $datetime, $description);
 
 // Headers para o email
 $headers = "From: $from_email\r\n";
-$headers .= "Reply-To: $email\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/calendar; method=REQUEST; charset=UTF-8\r\n";
 $headers .= "Content-Disposition: inline; filename=meeting.ics\r\n";
