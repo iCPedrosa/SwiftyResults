@@ -896,7 +896,7 @@
 
           <div class="col-lg-6">
             <form action="php/schedule_meeting.php" method="post" class="php-email-form">
-              <p>Schedule a meeting with us</p>
+              <p>Schedule a 15 Minute Consultation With Us</p>
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
@@ -940,7 +940,7 @@
           <div class="col-lg-6">
 
             <form action="php/mail.php" method="post" class="php-email-form">
-              <p>Contatc Us </p>
+              <p>Contact Us </p>
               <div class="row gy-4">
 
 

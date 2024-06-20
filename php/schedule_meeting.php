@@ -58,7 +58,7 @@ $writer->save($tempFilePath);
 $mail = new PHPMailer(true);
 
 try {
-    // Configurações do servidor
+   
     $mail->isSMTP();
     $mail->Host = $mailHost;
     $mail->SMTPAuth = true;
@@ -67,7 +67,7 @@ try {
     $mail->SMTPSecure = 'tls';
     $mail->Port = $mailPort;
 
-    // Configurações do e-mail
+   
     $mail->setFrom('icpedrosa@swiftyresults.com', 'bernardo.melo@swiftyresults.com'); // Substitua pelo seu email e nome
     $mail->addAddress($email); // Adiciona o endereço de e-mail do destinatário
 
