@@ -14,7 +14,9 @@
   <link href="assets/img/logoswiftyresults.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -73,7 +75,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-<!--
+          <!--
           <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li>
@@ -115,10 +117,12 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">From Good to Great with SwiftyResults</b></h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We build and have built brands, your success is our business. Establishing a digital presence is necessary to enable that. Take this step today.</h2>
+          <h2 data-aos="fade-up" data-aos-delay="400">We build and have built brands, your success is our business.
+            Establishing a digital presence is necessary to enable that. Take this step today.</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <a href="#contact"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Schedule a free consultation</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -145,10 +149,14 @@
               <h3>Who We Are</h3>
               <h2>We're all about creating amazing digital solutions that help your business shine online.</h2>
               <p>
-              Whether you're looking for a stunning website, a seamless CRM system, or some marketing magic, we've got you covered. What sets us apart? Our friendly team's here to partner with you every step of the way. Let's make your online presence shine. <br/><br/>Welcome to SwiftyResults, where success is just a click away.
+                Whether you're looking for a stunning website, a seamless CRM system, or some marketing magic, we've got
+                you covered. What sets us apart? Our friendly team's here to partner with you every step of the way.
+                Let's make your online presence shine. <br /><br />Welcome to SwiftyResults, where success is just a
+                click away.
               </p>
               <div class="text-center text-lg-start">
-                <a href="#services" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <a href="#services"
+                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Read More</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -181,16 +189,17 @@
               <div class="member-img">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                 <div class="social">
-                 <!--<a href=""><i class="bi bi-twitter"></i></a>
+                  <!--<a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>--> 
+                  <a href=""><i class="bi bi-instagram"></i></a>-->
                   <a href="https://www.linkedin.com/in/icpedrosa/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>Israel Pedrosa</h4>
                 <span>Founder and Developer</span>
-                <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from small businesses to Fortune 500s.</p>
+                <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from
+                  small businesses to Fortune 500s.</p>
               </div>
             </div>
           </div>
@@ -200,16 +209,17 @@
               <div class="member-img">
                 <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
-                 <!--<a href=""><i class="bi bi-twitter"></i></a>
+                  <!--<a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>--> 
+                  <a href=""><i class="bi bi-instagram"></i></a>-->
                   <a href="https://www.linkedin.com/in/ysaenz/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>Yasmeen Saenz</h4>
                 <span>Customer Success Manager</span>
-                <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building strong relationships. 🚀</p>
+                <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building
+                  strong relationships. 🚀</p>
               </div>
             </div>
           </div>
@@ -228,7 +238,8 @@
               <div class="member-info">
                 <h4>Bernardo Melo</h4>
                 <span>Director of Digital & eCommerce Solutions</span>
-                <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist to assist businesses of all sizes globally with e-commerce solutions.</p>
+                <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist
+                  to assist businesses of all sizes globally with e-commerce solutions.</p>
               </div>
             </div>
           </div>
@@ -247,7 +258,8 @@
               <div class="member-info">
                 <h4>Marcus Wagner</h4>
                 <span>Director, Business Development</span>
-                <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes, and build partnerships, ensuring your business thrives. Your success is my mission."</p>
+                <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes,
+                  and build partnerships, ensuring your business thrives. Your success is my mission."</p>
               </div>
             </div>
           </div>
@@ -257,7 +269,7 @@
       </div>
 
     </section><!-- End Team Section -->
-    
+
     <!-- ======= Values Section ======= -->
     <!--
     <section id="values" class="values">
@@ -424,13 +436,13 @@
 
         </div>--> <!-- / row -->
 
-        <!-- Feature Tabs -->
-        <!-- <div class="row feture-tabs" data-aos="fade-up">
+    <!-- Feature Tabs -->
+    <!-- <div class="row feture-tabs" data-aos="fade-up">
           <div class="col-lg-6">
             <h3>Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3> -->
 
-            <!-- Tabs -->
-            <!-- <ul class="nav nav-pills mb-3">
+    <!-- Tabs -->
+    <!-- <ul class="nav nav-pills mb-3">
               <li>
                 <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a>
               </li>
@@ -441,11 +453,11 @@
                 <a class="nav-link" data-bs-toggle="pill" href="#tab3">Corrupti</a>
               </li>
             </ul> -->
-            
-            <!-- End Tabs -->
 
-            <!-- Tab Content -->
-            <!-- <div class="tab-content">
+    <!-- End Tabs -->
+
+    <!-- Tab Content -->
+    <!-- <div class="tab-content">
 
               <div class="tab-pane fade show active" id="tab1">
                 <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
@@ -460,10 +472,10 @@
                 </div>
                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
               </div> -->
-              
-              <!-- End Tab 1 Content -->
 
-              <!-- <div class="tab-pane fade show" id="tab2">
+    <!-- End Tab 1 Content -->
+
+    <!-- <div class="tab-pane fade show" id="tab2">
                 <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
                 <div class="d-flex align-items-center mb-2">
                   <i class="bi bi-check2"></i>
@@ -476,10 +488,10 @@
                 </div>
                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
               </div> -->
-              
-              <!-- End Tab 2 Content -->
 
-              <!-- <div class="tab-pane fade show" id="tab3">
+    <!-- End Tab 2 Content -->
+
+    <!-- <div class="tab-pane fade show" id="tab3">
                 <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
                 <div class="d-flex align-items-center mb-2">
                   <i class="bi bi-check2"></i>
@@ -492,9 +504,9 @@
                 </div>
                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
               </div> -->
-              
-              <!-- End Tab 3 Content -->
-<!-- 
+
+    <!-- End Tab 3 Content -->
+    <!-- 
             </div>
 
           </div>
@@ -504,11 +516,11 @@
           </div>
 
         </div> -->
-        
-        <!-- End Feature Tabs -->
 
-        <!-- Feature Icons -->
-        <!-- <div class="row feature-icons" data-aos="fade-up">
+    <!-- End Feature Tabs -->
+
+    <!-- Feature Icons -->
+    <!-- <div class="row feature-icons" data-aos="fade-up">
           <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
 
           <div class="row">
@@ -574,13 +586,13 @@
           </div> 
 
         </div>-->
-        
-        <!-- End Feature Icons -->
-<!-- 
+
+    <!-- End Feature Icons -->
+    <!-- 
       </div>
 
     </section> -->
-    
+
     <!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
@@ -599,56 +611,62 @@
             <div class="service-box blue">
               <i class="ri-discuss-line icon"></i>
               <h3>Shopify Solutions</h3>
-              <p>Transform your e-commerce experience with tailored Shopify solutions. Streamline your store setup, enhance user experience, and boost sales.</p>
+              <p>Transform your e-commerce experience with tailored Shopify solutions. Streamline your store setup,
+                enhance user experience, and boost sales.</p>
               <a href="#pricing" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-box orange">
               <i class="ri-discuss-line icon"></i>
               <h3>Website Development</h3>
-              <p>From concept to launch, we craft visually stunning and user-friendly websites. Elevate your online presence with our expert development services.</p>
+              <p>From concept to launch, we craft visually stunning and user-friendly websites. Elevate your online
+                presence with our expert development services.</p>
               <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-box green">
               <i class="ri-discuss-line icon"></i>
               <h3>Marketing Automation</h3>
-              <p>Maximize efficiency and drive growth with marketing automation solutions. Engage customers, nurture leads, and analyze performance seamlessly.</p>
+              <p>Maximize efficiency and drive growth with marketing automation solutions. Engage customers, nurture
+                leads, and analyze performance seamlessly.</p>
               <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-box red">
               <i class="ri-discuss-line icon"></i>
               <h3>CRM Implementation</h3>
-              <p>Empower your team and strengthen customer relationships with customized CRM solutions. Unlock insights, streamline processes, and drive revenue.</p>
+              <p>Empower your team and strengthen customer relationships with customized CRM solutions. Unlock insights,
+                streamline processes, and drive revenue.</p>
               <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-box purple">
               <i class="ri-discuss-line icon"></i>
               <h3>SMS and Email Marketing</h3>
-              <p>Reach your audience effectively with targeted SMS and email marketing campaigns. Drive engagement, conversions, and brand loyalty effortlessly.</p>
+              <p>Reach your audience effectively with targeted SMS and email marketing campaigns. Drive engagement,
+                conversions, and brand loyalty effortlessly.</p>
               <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
             <div class="service-box pink">
               <i class="ri-discuss-line icon"></i>
               <h3>Custom Solutions</h3>
-              <p>Have a unique need? Let's discuss. Our team specializes in crafting bespoke digital solutions tailored to your specific requirements and goals.</p>
+              <p>Have a unique need? Let's discuss. Our team specializes in crafting bespoke digital solutions tailored
+                to your specific requirements and goals.</p>
               <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          
+
 
         </div>
 
@@ -681,7 +699,7 @@
               <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
               <span class="featured">Featured</span>
@@ -697,7 +715,7 @@
               <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="box">
               <h3 style="color: #ff901c;">Premium Shopify Solution</h3>
@@ -712,7 +730,7 @@
               <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
-          
+
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="box">
               <h3 style="color: #ff0071;">Enterprise Shopify Package</h3>
@@ -727,7 +745,7 @@
               <a href="#contact" class="btn-buy">Get Started</a>
             </div>
           </div>
-          
+
 
         </div>
 
@@ -751,94 +769,110 @@
             <div class="accordion accordion-flush" id="faqlist1">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1">
                     What services do you offer for Shopify setup?
                   </button>
                 </h2>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    We offer a range of Shopify setup services tailored to your needs. This includes basic setup for one-page stores, advanced setup for multi-page stores, custom theme design, product upload assistance, and more.
+                    We offer a range of Shopify setup services tailored to your needs. This includes basic setup for
+                    one-page stores, advanced setup for multi-page stores, custom theme design, product upload
+                    assistance, and more.
                   </div>
                 </div>
               </div>
-        
+
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2">
                     Do you provide ongoing support for website development?
                   </button>
                 </h2>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Yes, we offer ongoing support for website development projects. Our team is available to address any questions or issues you may encounter after the initial setup, ensuring your website runs smoothly.
+                    Yes, we offer ongoing support for website development projects. Our team is available to address any
+                    questions or issues you may encounter after the initial setup, ensuring your website runs smoothly.
                   </div>
                 </div>
               </div>
-        
+
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-3">
                     Can I customize the marketing automation solutions to suit my business needs?
                   </button>
                 </h2>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Absolutely. Our marketing automation solutions are highly customizable. We work closely with you to understand your business requirements and tailor the automation processes to achieve your specific goals.
+                    Absolutely. Our marketing automation solutions are highly customizable. We work closely with you to
+                    understand your business requirements and tailor the automation processes to achieve your specific
+                    goals.
                   </div>
                 </div>
               </div>
-        
+
             </div>
           </div>
-        
+
           <div class="col-lg-6">
-        
+
             <!-- F.A.Q List 2-->
             <div class="accordion accordion-flush" id="faqlist2">
-        
+
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2-content-1">
                     What does the CRM implementation process involve?
                   </button>
                 </h2>
                 <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                    Our CRM implementation process includes consultation, customization, data migration, integration with existing systems, user training, and ongoing support. We ensure a seamless transition to your new CRM system.
+                    Our CRM implementation process includes consultation, customization, data migration, integration
+                    with existing systems, user training, and ongoing support. We ensure a seamless transition to your
+                    new CRM system.
                   </div>
                 </div>
               </div>
-        
+
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2-content-2">
                     How effective are SMS and email marketing campaigns?
                   </button>
                 </h2>
                 <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                    SMS and email marketing campaigns can be highly effective when executed strategically. We employ best practices in audience segmentation, personalized messaging, and timing to maximize engagement and conversions for your business.
+                    SMS and email marketing campaigns can be highly effective when executed strategically. We employ
+                    best practices in audience segmentation, personalized messaging, and timing to maximize engagement
+                    and conversions for your business.
                   </div>
                 </div>
               </div>
-        
+
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2-content-3">
                     Is there flexibility in pricing plans for your services?
                   </button>
                 </h2>
                 <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                    Yes, we offer flexibility in pricing plans to accommodate businesses of all sizes. Whether you're a startup or an enterprise, we have tailored solutions to meet your budget and requirements.
+                    Yes, we offer flexibility in pricing plans to accommodate businesses of all sizes. Whether you're a
+                    startup or an enterprise, we have tailored solutions to meet your budget and requirements.
                   </div>
                 </div>
               </div>
-        
+
             </div>
           </div>
         </div>
-        
+
 
       </div>
 
@@ -848,22 +882,74 @@
 
       <div class="container" data-aos="fade-up">
 
+
+
+
         <header class="section-header">
           <!-- <h2>Contact</h2> -->
           <p>Schedule Your Free Consultation</p>
         </header>
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-12">
-            <form action="php/mail.php" method="post" class="php-email-form">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <form action="php/schedule_meeting.php" method="post" class="php-email-form">
+              <p>Schedule a meeting with us</p>
               <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="datetime-local" class="form-control" id="datetime" name="datetime" required>
+                </div>
+             
+
+                <div class="col-md-12">
+                  <textarea class="form-control" id="description" name="description" placeholder="Description"
+                    rows="6"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none;">Loading</div>
+                  <div class="error-message" style="display: none;"></div>
+                  <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="col-lg-6">
+
+            <form action="php/mail.php" method="post" class="php-email-form">
+              <p>Contatc Us </p>
+              <div class="row gy-4">
+
 
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
 
                 <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-                  <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off">
+                  <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1"
+                    autocomplete="off">
                 </label>
 
                 <div class="col-md-6 ">
@@ -882,7 +968,7 @@
                   <button type="submit">Submit</button>
                 </div>
 
-              </div>
+
             </form>
 
           </div>
@@ -890,68 +976,75 @@
         </div>
 
       </div>
-
+      </div>
     </section><!-- End Contact Section -->
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
+      <div class="row gy-4">
+        <div class="container" data-aos="fade-up">
 
-      <div class="container" data-aos="fade-up">
+          <header class="section-header">
+            <h2>Portfolio</h2>
+            <p>Check our latest work</p>
+          </header>
 
-        <header class="section-header">
-          <h2>Portfolio</h2>
-          <p>Check our latest work</p>
-        </header>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Shopify</li>
-              <li data-filter=".filter-card">SMS and Email</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>HableePets</h4>
-                <p>Shopify eCommerce</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                  <a href="https://www.hableepets.com" target="_blank" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">Shopify</li>
+                <li data-filter=".filter-card">SMS and Email</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>NeoxHair</h4>
-                <p>eCommerce Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="https://www.instagram.com/neoxhair/" target="_blank" title="More Details"><i class="bi bi-link"></i></a>
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>HableePets</h4>
+                  <p>Shopify eCommerce</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery"
+                      class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                    <a href="https://www.hableepets.com" target="_blank" title="More Details"><i
+                        class="bi bi-link"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>eClat Jewlery</h4>
-                <p>Shopify eCommerce</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                  <a href="https://eclatjoaillerie.com/" target="_blank" title="More Details"><i class="bi bi-link"></i></a>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>NeoxHair</h4>
+                  <p>eCommerce Web</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery"
+                      class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="https://www.instagram.com/neoxhair/" target="_blank" title="More Details"><i
+                        class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>eClat Jewlery</h4>
+                  <p>Shopify eCommerce</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery"
+                      class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                    <a href="https://eclatjoaillerie.com/" target="_blank" title="More Details"><i
+                        class="bi bi-link"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -978,7 +1071,8 @@
                 <h4>4Beauty</h4>
                 <p>eCommerce Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                  <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery"
+                    class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
@@ -1063,10 +1157,13 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  I've been thoroughly impressed with the Shopify setup service provided by this company. Their attention to detail and professionalism exceeded my expectations. They made the entire process seamless and stress-free. Highly recommend!
+                  I've been thoroughly impressed with the Shopify setup service provided by this company. Their
+                  attention to detail and professionalism exceeded my expectations. They made the entire process
+                  seamless and stress-free. Highly recommend!
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
@@ -1075,14 +1172,17 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
-            
+
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  The marketing automation solutions provided by this team have been a game-changer for my business. Their expertise in automation strategies has significantly improved our efficiency and customer engagement. Couldn't be happier with the results!
+                  The marketing automation solutions provided by this team have been a game-changer for my business.
+                  Their expertise in automation strategies has significantly improved our efficiency and customer
+                  engagement. Couldn't be happier with the results!
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
@@ -1091,14 +1191,17 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
-            
+
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  The CRM implementation service offered by this company was top-notch. From consultation to execution, they demonstrated expertise and professionalism at every step. Our team now enjoys a more streamlined and efficient workflow. Highly recommend their services!
+                  The CRM implementation service offered by this company was top-notch. From consultation to execution,
+                  they demonstrated expertise and professionalism at every step. Our team now enjoys a more streamlined
+                  and efficient workflow. Highly recommend their services!
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
@@ -1107,14 +1210,17 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
-            
+
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  The SMS and email marketing campaigns executed by this team have yielded outstanding results for our business. Their strategic approach and attention to detail have significantly boosted our customer engagement and conversions. Highly recommended!
+                  The SMS and email marketing campaigns executed by this team have yielded outstanding results for our
+                  business. Their strategic approach and attention to detail have significantly boosted our customer
+                  engagement and conversions. Highly recommended!
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
@@ -1123,14 +1229,17 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
-            
+
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  The website development service provided by this company surpassed all expectations. They were attentive to our needs, responsive to feedback, and delivered a website that perfectly reflects our brand. Exceptional work!
+                  The website development service provided by this company surpassed all expectations. They were
+                  attentive to our needs, responsive to feedback, and delivered a website that perfectly reflects our
+                  brand. Exceptional work!
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -1139,7 +1248,7 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
-            
+
 
           </div>
           <div class="swiper-pagination"></div>
@@ -1328,7 +1437,8 @@
           </div>
           <div class="col-lg-6">
             <form action="php/newsletter.php" method="post" class="newsletter-form">
-              <input type="email" name="email"><input type="hidden" name="OptedIn" value="true"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="hidden" name="OptedIn" value="true"><input type="submit"
+                value="Subscribe">
             </form>
           </div>
         </div>
@@ -1373,7 +1483,7 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#services">SMS and Email Marketing</a></li>
             </ul>
           </div>
-          
+
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
@@ -1404,7 +1514,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1417,8 +1528,8 @@
   <script src="assets/js/newsletter.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script> 
-  <?php include_once("php/analyticstracking.php") ?>
+  <script src="assets/js/main.js"></script>
+  <?php include_once ("php/analyticstracking.php") ?>
 </body>
 
 </html>
