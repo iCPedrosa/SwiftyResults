@@ -20,7 +20,7 @@ function generate_ics_file_outlook($to, $email, $datetime, $description) {
     $end_date = (new DateTime($datetime))->modify('+15 minutes')->format('Ymd\THis');
 
     // Lista de participantes (destinatários internos da SwiftyResults)
-    $attendees = "";
+    $attendees = "icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com";
     foreach (explode(', ', $to) as $attendee) {
         $attendees .= "ATTENDEE;CN=SwiftyResults;RSVP=TRUE:mailto:$attendee\r\n";
     }
@@ -53,7 +53,7 @@ function generate_ics_file_google($to, $email, $datetime, $description) {
     $end_date = (new DateTime($datetime))->modify('+15 minutes')->format('Ymd\THis');
 
     // Lista de participantes (destinatários internos da SwiftyResults)
-    $attendees = "";
+    $attendees = "icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com";
     foreach (explode(', ', $to) as $attendee) {
         $attendees .= "ATTENDEE;CN=SwiftyResults;RSVP=TRUE:mailto:$attendee\r\n";
     }
