@@ -96,12 +96,13 @@ $headers .= "Content-Type: text/calendar; method=REQUEST; charset=UTF-8\r\n";
 $headers .= "Content-Disposition: inline; filename=meeting.ics\r\n";
 $headers .= "Content-Transfer-Encoding: 7bit\r\n";
 
-// Enviar o email com o arquivo .ics anexado
+// Corrigir o envio do email
 try {
-    mail($headers_to, $subject, $ics_content, $headers);
+    // Usar um dos endereços principais da lista $to como destinatário principal
+    $main_recipient = reset(explode(',', $to)); // Obter o primeiro endereço da lista $to
+    mail($main_recipient, $subject, $ics_content, $headers);
     header('HTTP/1.1 200 OK');
-    echo "Email sent successfully!";
+    echo "Email enviado com sucesso!";
 } catch (Exception $ex) {
-    echo "Error: " . $ex->getMessage();
+    echo "Erro: " . $ex->getMessage();
 }
-?>
