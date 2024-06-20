@@ -114,8 +114,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">From Good to Great with SwiftyResults</b></h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We build and have built brands, your success is our business. Establishing a digital presence is necessary to enable that. Take this step today.</h2>
+          <h1 data-aos="fade-up">Transform your Marketing Digitally</b></h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">We're a small team of experts that have worked with small to mid size businesses up to Fortune 500s. Our mission is to enable your success through digital marketing.</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
               <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
