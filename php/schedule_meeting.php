@@ -1,5 +1,4 @@
 <?php
-$name = $_POST['name'];
 $email = $_POST['email'];
 $datetime = $_POST['datetime'];
 $description = $_POST['description'];
@@ -8,17 +7,22 @@ $subject = "Schedule Meeting";
 $to = "icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com";
 $from_email = $email;
 
+// Função para formatar a data e hora no formato correto para o arquivo .ics
+function format_ics_datetime($datetime) {
+    $datetime = new DateTime($datetime);
+    return $datetime->format('Ymd\THis');
+}
+
 // Função para gerar o conteúdo do arquivo .ics
 function generate_ics_file($email, $datetime, $description) {
-    $timestamp = strtotime($datetime);
-    $start_date = date('Ymd\THis', $timestamp);
-    $end_date = date('Ymd\THis', strtotime('+15 minutes', $timestamp));
+    $start_date = format_ics_datetime($datetime);
+    $end_date = (new DateTime($start_date))->modify('+15 minutes')->format('Ymd\THis');
 
     $output = "BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Your Company//NONSGML Event//EN
 BEGIN:VEVENT
-UID:" . md5(uniqid(mt_rand(), true)) . "@swiftyresults.com
+UID:" . md5(uniqid(mt_rand(), true)) . "@yourdomain.com
 DTSTAMP:" . gmdate('Ymd\THis\Z') . "
 DTSTART:$start_date
 DTEND:$end_date
@@ -31,7 +35,7 @@ END:VCALENDAR";
 }
 
 // Gerar o conteúdo do arquivo .ics
-$ics_content = generate_ics_file($name, $email, $datetime, $description);
+$ics_content = generate_ics_file($email, $datetime, $description);
 
 // Headers para o email
 $headers = "From: $from_email\r\n";
