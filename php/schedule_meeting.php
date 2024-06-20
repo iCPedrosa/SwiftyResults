@@ -18,7 +18,7 @@ function generate_ics_file($email, $datetime, $description) {
 VERSION:2.0
 PRODID:-//Your Company//NONSGML Event//EN
 BEGIN:VEVENT
-UID:" . md5(uniqid(mt_rand(), true)) . "@yourdomain.com
+UID:" . md5(uniqid(mt_rand(), true)) . "@swiftyresults.com
 DTSTAMP:" . gmdate('Ymd\THis\Z') . "
 DTSTART:$start_date
 DTEND:$end_date
