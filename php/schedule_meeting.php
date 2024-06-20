@@ -9,7 +9,7 @@ $to = "icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagn
 $from_email = $email;
 
 // Função para gerar o conteúdo do arquivo .ics
-function generate_ics_file($datetime, $description) {
+function generate_ics_file($email, $datetime, $description) {
     $timestamp = strtotime($datetime);
     $start_date = date('Ymd\THis', $timestamp);
     $end_date = date('Ymd\THis', strtotime('+15 minutes', $timestamp));
@@ -22,7 +22,8 @@ UID:" . md5(uniqid(mt_rand(), true)) . "@yourdomain.com
 DTSTAMP:" . gmdate('Ymd\THis\Z') . "
 DTSTART:$start_date
 DTEND:$end_date
-SUMMARY:Meeting with " . $description . "
+SUMMARY:Meeting with $email
+DESCRIPTION:$description
 END:VEVENT
 END:VCALENDAR";
 
@@ -30,7 +31,7 @@ END:VCALENDAR";
 }
 
 // Gerar o conteúdo do arquivo .ics
-$ics_content = generate_ics_file($datetime, $description);
+$ics_content = generate_ics_file($name, $email, $datetime, $description);
 
 // Headers para o email
 $headers = "From: $from_email\r\n";

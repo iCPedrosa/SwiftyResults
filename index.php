@@ -914,7 +914,6 @@
                   <div class="loading" style="display: none;">Loading</div>
                   <div class="error-message" style="display: none;"></div>
                   <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                  
                   <button type="submit">Submit</button>
                 </div>
               </div>
