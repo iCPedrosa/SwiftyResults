@@ -1705,7 +1705,8 @@ section {
   border-color: #4154f1;
 }
 
-.contact .php-email-form input[type=datetime-local],
+.contact .php-email-form input[type=date],
+.contact .php-email-form input[type=time],
 .contact .php-email-form input[type=email] {
   padding: 10px 15px;
 }
