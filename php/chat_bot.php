@@ -26,17 +26,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Envio do email
         if (mail($to, $subject, $email_body, $headers)) {
             http_response_code(200);
-            echo json_encode(array('status' => 'success', 'message' => 'Sua mensagem foi enviada. Entraremos em contato via email em breve. Obrigado!'));
+            echo json_encode(array('status' => 'success', 'message' => 'Your message has been sent. We will get back to you via email soon. Thank you!'));
         } else {
             http_response_code(500);
-            echo json_encode(array('status' => 'error', 'message' => 'Erro ao enviar mensagem. Por favor, tente novamente mais tarde.'));
+            echo json_encode(array('status' => 'error', 'message' => 'Error sending message. Please try again later.'));
         }
     } else {
         http_response_code(400);
-        echo json_encode(array('status' => 'error', 'message' => 'Por favor, preencha todos os campos.'));
+        echo json_encode(array('status' => 'error', 'message' => 'Please fill in all fields.'));
     }
 } else {
     http_response_code(403);
-    echo json_encode(array('status' => 'error', 'message' => 'Acesso proibido.'));
+    echo json_encode(array('status' => 'error', 'message' => 'Forbidden access.'));
 }
 ?>
