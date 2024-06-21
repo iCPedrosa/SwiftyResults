@@ -41,95 +41,95 @@
 <body>
   <!-- ======= CHAT BOT ================================ ======= -->
   <title>Chat Button</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
 
-<div class="chat-button" id="chatButton" onclick="toggleChat()"><i class="fa fa-comments"></i></div>
+  <div class="chat-button" id="chatButton" onclick="toggleChat()"><i class="fa fa-comments"></i></div>
 
-<div class="chat-container" id="chatContainer">
-  <div class="chat-header" onclick="toggleChat()">Close Chat</div>
-  <div class="message-container" id="messageContainer"></div>
-  <form class="chat-form" id="chatForm">
-    <input type="text" id="name" name="name" placeholder="Your Name" required>
-    <input type="email" id="email" name="email" placeholder="Your Email" required>
-    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-    <button type="button" onclick="validateAndSendMessage()">Send</button>
-  </form>
-</div>
+  <div class="chat-container" id="chatContainer">
+    <div class="chat-header" onclick="toggleChat()">Close Chat</div>
+    <div class="message-container" id="messageContainer"></div>
+    <form class="chat-form" id="chatForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="button" onclick="validateAndSendMessage()">Send</button>
+    </form>
+  </div>
 
-<script>
-  var chatContainer = document.getElementById('chatContainer');
-  var messageContainer = document.getElementById('messageContainer');
+  <script>
+    var chatContainer = document.getElementById('chatContainer');
+    var messageContainer = document.getElementById('messageContainer');
 
-  function toggleChat() {
-    chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
-  }
-
-  function sendMessage() {
-    var xhr = new XMLHttpRequest();
-    var formData = new FormData(document.getElementById('chatForm'));
-    xhr.open('POST', 'php/chat_bot.php', true);
-    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
-          var response = JSON.parse(xhr.responseText);
-          if (response.status === 'success') {
-            showConfirmation(response.message);
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
-            setTimeout(function () {
-              toggleChat();
-            }, 5000);
-          } else {
-            showErrorMessage(response.message);
-          }
-        } else {
-          showErrorMessage('Error sending message.');
-        }
-      }
-    };
-    xhr.send(formData);
-  }
-
-  function showConfirmation(message) {
-    var confirmationElement = document.createElement('div');
-    confirmationElement.classList.add('confirmation-message');
-    confirmationElement.textContent = message;
-    messageContainer.appendChild(confirmationElement);
-    messageContainer.scrollTop = messageContainer.scrollHeight;
-  }
-
-  function showErrorMessage(message) {
-    var errorElement = document.createElement('div');
-    errorElement.classList.add('error-message');
-    errorElement.textContent = message;
-    messageContainer.appendChild(errorElement);
-    messageContainer.scrollTop = messageContainer.scrollHeight;
-  }
-
-  function validateEmail(email) {
-    // Regex for simple email validation
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
-  }
-
-  function validateAndSendMessage() {
-    var emailInput = document.getElementById('email');
-    var email = emailInput.value.trim();
-
-    if (!validateEmail(email)) {
-      showErrorMessage('Please enter a valid email address.');
-      return;
+    function toggleChat() {
+      chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
     }
 
-    sendMessage(); // If email is valid, proceed to send message
-  }
-</script>
+    function sendMessage() {
+      var xhr = new XMLHttpRequest();
+      var formData = new FormData(document.getElementById('chatForm'));
+      xhr.open('POST', 'php/chat_bot.php', true);
+      xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            if (response.status === 'success') {
+              showConfirmation(response.message);
+              document.getElementById('name').value = '';
+              document.getElementById('email').value = '';
+              document.getElementById('message').value = '';
+              setTimeout(function () {
+                toggleChat();
+              }, 5000);
+            } else {
+              showErrorMessage(response.message);
+            }
+          } else {
+            showErrorMessage('Error sending message.');
+          }
+        }
+      };
+      xhr.send(formData);
+    }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    function showConfirmation(message) {
+      var confirmationElement = document.createElement('div');
+      confirmationElement.classList.add('confirmation-message');
+      confirmationElement.textContent = message;
+      messageContainer.appendChild(confirmationElement);
+      messageContainer.scrollTop = messageContainer.scrollHeight;
+    }
+
+    function showErrorMessage(message) {
+      var errorElement = document.createElement('div');
+      errorElement.classList.add('error-message');
+      errorElement.textContent = message;
+      messageContainer.appendChild(errorElement);
+      messageContainer.scrollTop = messageContainer.scrollHeight;
+    }
+
+    function validateEmail(email) {
+      // Regex for simple email validation
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+
+    function validateAndSendMessage() {
+      var emailInput = document.getElementById('email');
+      var email = emailInput.value.trim();
+
+      if (!validateEmail(email)) {
+        showErrorMessage('Please enter a valid email address.');
+        return;
+      }
+
+      sendMessage(); // If email is valid, proceed to send message
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 
 
   <!-- ======= CHAT BOT ================================ ======= -->
@@ -1001,14 +1001,51 @@
                   <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="col-md-3">
-                  <input type="date" class="form-control" id="date" name="date" min="<?php echo date('Y-m-d'); ?>"
-                    value="<?php echo date('Y-m-d'); ?>" required>
+                  <input type="date" class="form-control" id="date" name="date" placeholder="Date"
+                    min="<?php echo date('Y-m-d'); ?>" value="<?php echo date('Y-m-d'); ?>" required>
                   <!-- Utiliza PHP para definir o mínimo e o valor inicial como o dia atual -->
                 </div>
                 <div class="col-md-3">
                   <select class="form-control" id="time" name="time" required>
-                    <option value="">Select Time</option>
-                    <!-- Options serão geradas dinamicamente via JavaScript -->
+                    <option value="">Time</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:15">08:15</option>
+                    <option value="08:30">08:30</option>
+                    <option value="08:45">08:45</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:15">09:15</option>
+                    <option value="09:30">09:30</option>
+                    <option value="09:45">09:45</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:15">10:15</option>
+                    <option value="10:30">10:30</option>
+                    <option value="10:45">10:45</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:15">11:15</option>
+                    <option value="11:30">11:30</option>
+                    <option value="11:45">11:45</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:15">12:15</option>
+                    <option value="12:30">12:30</option>
+                    <option value="12:45">12:45</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:15">13:15</option>
+                    <option value="13:30">13:30</option>
+                    <option value="13:45">13:45</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:15">14:15</option>
+                    <option value="14:30">14:30</option>
+                    <option value="14:45">14:45</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:15">15:15</option>
+                    <option value="15:30">15:30</option>
+                    <option value="15:45">15:45</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:15">16:15</option>
+                    <option value="16:30">16:30</option>
+                    <option value="16:45">16:45</option>
+                  </select>
+                  <!-- Options serão geradas dinamicamente via JavaScript -->
                   </select>
                 </div>
                 <div class="col-md-12">
@@ -1028,28 +1065,30 @@
 
 
           <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const timeSelect = document.getElementById('time');
-              const intervals = 15; // Intervalo de 15 minutos
-              const startHour = 8;
-              const endHour = 17;
+             document.addEventListener('DOMContentLoaded', function () {
+            // //   const timeSelect = document.getElementById('time');
+            // //   const intervals = 15; // Intervalo de 15 minutos
+            // //   const startHour = 8;
+            // //   const endHour = 17;
+            // //   const inicial = 'Time'
 
-              // Função para gerar as opções de tempo
-              function generateTimeOptions() {
-                timeSelect.innerHTML = ''; // Limpa as opções existentes
+               // Função para gerar as opções de tempo
+            // //   function generateTimeOptions() {
+            // //     timeSelect.innerHTML = ''; // Limpa as opções existentes
+            // //     timeSelect.text = 'Time'
+            // //     for (let hour = startHour; hour < endHour; hour++) {
+            // //       for (let minutes = 0; minutes < 60; minutes += intervals) {
+            // //         const time = `${String(hour).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+            // //         const option = document.createElement('option');
+                         
+            // //         option.value = time;
+            // //         option.textContent = time;
+            // //         timeSelect.appendChild(option);
+            // //       }
+            // //     }
+            // //   }
 
-                for (let hour = startHour; hour < endHour; hour++) {
-                  for (let minutes = 0; minutes < 60; minutes += intervals) {
-                    const time = `${String(hour).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
-                    const option = document.createElement('option');
-                    option.value = time;
-                    option.textContent = time;
-                    timeSelect.appendChild(option);
-                  }
-                }
-              }
-
-              generateTimeOptions(); // Chama a função para gerar as opções de tempo inicialmente
+            //   generateTimeOptions(); // Chama a função para gerar as opções de tempo inicialmente
 
               // Adiciona um listener para quando a data for alterada
               document.getElementById('date').addEventListener('input', function () {
