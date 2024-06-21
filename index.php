@@ -893,11 +893,15 @@
         </header>
 
 
+
         <div class="row gy-4">
 
+  
+
           <div class="col-lg-6">
+
             <form action="php/schedule_meeting.php" method="post" class="php-email-form">
-              <p>Schedule a 15 Minute Consultation With Us</p>
+              <p >Schedule a 15 Minute With Us</p>
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
