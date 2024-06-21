@@ -1692,6 +1692,7 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
+.contact .php-email-form #time,
 .contact .php-email-form input,
 .contact .php-email-form textarea {
   border-radius: 0;
@@ -1705,8 +1706,14 @@ section {
   border-color: #4154f1;
 }
 
+.contact .php-email-form #time {
+  padding: 10px 15px;
+ 
+}
+
 .contact .php-email-form input[type=date],
-.contact .php-email-form input[type=time],
+.contact .php-email-form input[id="time"],
+.contact .php-email-form input[type="text"],
 .contact .php-email-form input[type=email] {
   padding: 10px 15px;
 }
