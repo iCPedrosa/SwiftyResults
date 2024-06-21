@@ -928,6 +928,7 @@
           </div>
 
 
+
           <script>
             document.addEventListener('DOMContentLoaded', function () {
               const timeSelect = document.getElementById('time');
@@ -953,9 +954,20 @@
               generateTimeOptions(); // Chama a função para gerar as opções de tempo inicialmente
 
               // Adiciona um listener para quando a data for alterada
-              document.getElementById('date').addEventListener('change', function () {
-                generateTimeOptions(); // Regenera as opções de tempo sempre que a data mudar
+              document.getElementById('date').addEventListener('input', function () {
+                validateDate(); // Chama a função para validar a data sempre que ela mudar
               });
+
+              // Função para validar a data e evitar datas anteriores
+              function validateDate() {
+                const selectedDate = new Date(document.getElementById('date').value);
+                const today = new Date();
+
+                // Define o mínimo como a data de hoje, se a data selecionada for anterior
+                if (selectedDate < today) {
+                  document.getElementById('date').value = today.toISOString().split('T')[0]; // Define o valor como o dia de hoje no formato ISO 8601
+                }
+              }
             });
 
           </script>
