@@ -895,56 +895,55 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6">
-            <form action="php/schedule_meeting.php" method="post" class="php-email-form">
-              <p>Schedule a 15 Minute Consultation With Us</p>
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="col-md-3">
-                  <input type="date" class="form-control" id="date" name="date" required>
-                </div>
-                <div class="col-md-3">
-                  <input type="time" class="form-control" id="time" name="time" required list="time-options">
-                  <datalist id="time-options">
-                    <!-- Opções de tempo serão preenchidas pelo JavaScript -->
-                  </datalist>
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" id="description" name="description" placeholder="Description"
-                    rows="6"></textarea>
-                </div>
-                <div class="col-md-12 text-center">
-                  <div class="loading" style="display: none;">Loading</div>
-                  <div class="error-message" style="display: none;"></div>
-                  <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                  <button type="submit">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
+        <div class="col-lg-6">
+    <form action="php/schedule_meeting.php" method="post" class="php-email-form">
+        <p>Schedule a 15 Minute Consultation With Us</p>
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="col-md-3">
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id="time" name="time" required>
+                    <option value="">Select Time</option>
+                    <!-- Options will be generated dynamically -->
+                </select>
+            </div>
+            <div class="col-md-12">
+                <textarea class="form-control" id="description" name="description" placeholder="Description" rows="6"></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="loading" style="display: none;">Loading</div>
+                <div class="error-message" style="display: none;"></div>
+                <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
 
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const timeOptions = document.getElementById('time-options');
-              const intervals = 15; // Intervalo de 15 minutos
-              const startHour = 8;
-              const endHour = 17;
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const timeSelect = document.getElementById('time');
+    const intervals = 15; // Intervalo de 15 minutos
+    const startHour = 8;
+    const endHour = 17;
 
-              for (let hour = startHour; hour < endHour; hour++) {
-                for (let minutes = 0; minutes < 60; minutes += intervals) {
-                  const time = new Date();
-                  time.setHours(hour);
-                  time.setMinutes(minutes);
-                  const timeString = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
-                  const option = document.createElement('option');
-                  option.value = timeString;
-                  timeOptions.appendChild(option);
-                }
-              }
-            });
-          </script>
+    for (let hour = startHour; hour < endHour; hour++) {
+        for (let minutes = 0; minutes < 60; minutes += intervals) {
+            const time = `${String(hour).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+            const option = document.createElement('option');
+            option.value = time;
+            option.textContent = time;
+            timeSelect.appendChild(option);
+        }
+    }
+});
+</script>
+
+
 
 
 
