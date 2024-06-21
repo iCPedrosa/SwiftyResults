@@ -42,8 +42,11 @@
       <!-- ======= CHAT BOT ================================ ======= -->
       <title>Expandable Chat Button</title>
     <style>
-     
+        /* Your CSS styles here */
     </style>
+</head>
+<body>
+
 <!-- Chat button -->
 <div class="chat-button" id="chatButton" onclick="toggleChat()"><i class="fa fa-comments"></i></div>
 
@@ -64,7 +67,7 @@
     </form>
 </div>
 
-<!-- JavaScript code -->
+<!-- JavaScript for chat interaction and message sending -->
 <script>
     var chatContainer = document.getElementById('chatContainer');
     var messageContainer = document.getElementById('messageContainer');
@@ -76,7 +79,7 @@
     function sendMessage() {
         var xhr = new XMLHttpRequest();
         var formData = new FormData(document.getElementById('chatForm'));
-        xhr.open('POST', 'send_email.php', true); // Replace 'send_email.php' with your PHP script URL
+        xhr.open('POST', 'send_email.php', true); // Path to your PHP email sending script
         xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -84,12 +87,13 @@
                     var response = JSON.parse(xhr.responseText);
                     if (response.status === 'success') {
                         showConfirmation(response.message);
-                        // Optionally, close chat or reset form here
+                        // Clear form fields after successful submission
                         document.getElementById('name').value = '';
                         document.getElementById('email').value = '';
                         document.getElementById('message').value = '';
+                        // Optionally, close the chat after sending
                         setTimeout(function() {
-                            chatContainer.style.display = 'none';
+                            toggleChat();
                         }, 5000); // Close chat after 5 seconds
                     } else {
                         showErrorMessage(response.message);
@@ -100,14 +104,6 @@
             }
         };
         xhr.send(formData);
-    }
-
-    function addMessage(name, message) {
-        var messageElement = document.createElement('div');
-        messageElement.classList.add('message');
-        messageElement.innerHTML = '<strong>' + name + ':</strong> ' + message;
-        messageContainer.appendChild(messageElement);
-        messageContainer.scrollTop = messageContainer.scrollHeight;
     }
 
     function showConfirmation(message) {
@@ -129,6 +125,7 @@
 
 <!-- Font Awesome CDN for chat icon -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
 
     <!-- ======= CHAT BOT ================================ ======= -->
 
