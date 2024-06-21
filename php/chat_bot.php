@@ -6,13 +6,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars(trim($_POST['name']));
     $email = htmlspecialchars(trim($_POST['email']));
     $message = htmlspecialchars(trim($_POST['message']));
+    $from_email = "Chat_Swifty@swiftyresults.com";
 
     // Verificando se todos os campos estão preenchidos
     if (!empty($name) && !empty($email) && !empty($message)) {
         // Configurações básicas do email
         $to = 'icpedrosa@swiftyresults.com, bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com';
         $subject = 'Mensagem do Formulário de Contato';
-        $headers = "From: $email\r\n";
+        $headers = "From: $from_email\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
