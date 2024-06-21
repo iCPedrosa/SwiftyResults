@@ -39,95 +39,90 @@
 </head>
 
 <body>
-      <!-- ======= CHAT BOT ================================ ======= -->
-      <title>Expandable Chat Button</title>
-    <style>
-        /* Your CSS styles here */
-    </style>
-</head>
-<body>
+  <!-- ======= CHAT BOT ================================ ======= -->
+  <title>Chat Button</title>
 
-<!-- Chat button -->
-<div class="chat-button" id="chatButton" onclick="toggleChat()"><i class="fa fa-comments"></i></div>
 
-<!-- Chat container -->
-<div class="chat-container" id="chatContainer">
-    <!-- Chat header (click to close) -->
+  <div class="chat-button" id="chatButton" onclick="toggleChat()"><i class="fa fa-comments"></i></div>
+
+
+  <div class="chat-container" id="chatContainer">
+
     <div class="chat-header" onclick="toggleChat()">Close Chat</div>
-    
-    <!-- Chat messages container -->
-    <div class="message-container" id="messageContainer"></div>
-    
-    <!-- Chat form -->
-    <form class="chat-form" id="chatForm">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="button" onclick="sendMessage()">Send</button>
-    </form>
-</div>
 
-<!-- JavaScript for chat interaction and message sending -->
-<script>
+
+    <div class="message-container" id="messageContainer"></div>
+
+
+    <form class="chat-form" id="chatForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="button" onclick="sendMessage()">Send</button>
+    </form>
+  </div>
+
+
+  <script>
     var chatContainer = document.getElementById('chatContainer');
     var messageContainer = document.getElementById('messageContainer');
 
     function toggleChat() {
-        chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
+      chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
     }
 
     function sendMessage() {
-        var xhr = new XMLHttpRequest();
-        var formData = new FormData(document.getElementById('chatForm'));
-        xhr.open('POST', 'php/chat_bot.php', true); // Path to your PHP email sending script
-        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    var response = JSON.parse(xhr.responseText);
-                    if (response.status === 'success') {
-                        showConfirmation(response.message);
-                        // Clear form fields after successful submission
-                        document.getElementById('name').value = '';
-                        document.getElementById('email').value = '';
-                        document.getElementById('message').value = '';
-                        // Optionally, close the chat after sending
-                        setTimeout(function() {
-                            toggleChat();
-                        }, 5000); // Close chat after 5 seconds
-                    } else {
-                        showErrorMessage(response.message);
-                    }
-                } else {
-                    showErrorMessage('Error sending message.');
-                }
+      var xhr = new XMLHttpRequest();
+      var formData = new FormData(document.getElementById('chatForm'));
+      xhr.open('POST', 'php/chat_bot.php', true);
+      xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            if (response.status === 'success') {
+              showConfirmation(response.message);
+
+              document.getElementById('name').value = '';
+              document.getElementById('email').value = '';
+              document.getElementById('message').value = '';
+
+              setTimeout(function () {
+                toggleChat();
+              }, 5000);
+            } else {
+              showErrorMessage(response.message);
             }
-        };
-        xhr.send(formData);
+          } else {
+            showErrorMessage('Error sending message.');
+          }
+        }
+      };
+      xhr.send(formData);
     }
 
     function showConfirmation(message) {
-        var confirmationElement = document.createElement('div');
-        confirmationElement.classList.add('confirmation-message');
-        confirmationElement.textContent = message;
-        messageContainer.appendChild(confirmationElement);
-        messageContainer.scrollTop = messageContainer.scrollHeight;
+      var confirmationElement = document.createElement('div');
+      confirmationElement.classList.add('confirmation-message');
+      confirmationElement.textContent = message;
+      messageContainer.appendChild(confirmationElement);
+      messageContainer.scrollTop = messageContainer.scrollHeight;
     }
 
     function showErrorMessage(message) {
-        var errorElement = document.createElement('div');
-        errorElement.classList.add('error-message');
-        errorElement.textContent = message;
-        messageContainer.appendChild(errorElement);
-        messageContainer.scrollTop = messageContainer.scrollHeight;
+      var errorElement = document.createElement('div');
+      errorElement.classList.add('error-message');
+      errorElement.textContent = message;
+      messageContainer.appendChild(errorElement);
+      messageContainer.scrollTop = messageContainer.scrollHeight;
     }
-</script>
-
-<!-- Font Awesome CDN for chat icon -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  </script>
 
 
-    <!-- ======= CHAT BOT ================================ ======= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
+  <!-- ======= CHAT BOT ================================ ======= -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -985,12 +980,12 @@
 
         <div class="row gy-4">
 
-  
+
 
           <div class="col-lg-6">
 
             <form action="php/schedule_meeting.php" method="post" class="php-email-form">
-              <p >Schedule a 15 Minute With Us</p>
+              <p>Schedule a 15 Minute With Us</p>
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
