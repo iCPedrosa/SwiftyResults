@@ -903,7 +903,7 @@
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="col-md-3">
-                <input type="date" class="form-control" id="date" name="date" required>
+                <input type="date" class="form-control" id="date" name="date"  placeholder="Select Date" required>
             </div>
             <div class="col-md-3">
                 <select class="form-control" id="time" name="time" required>
