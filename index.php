@@ -924,7 +924,7 @@
                 <div class="col-md-12 text-center">
                   <div class="loading" style="display: none;">Loading</div>
                   <div class="error-message" style="display: none;"></div>
-                  <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                  <div class="sent-message" style="display: none;">Your Schedule a 15 Minute With Us. Thank you!</div>
                   <button type="submit">Submit</button>
                 </div>
               </div>
