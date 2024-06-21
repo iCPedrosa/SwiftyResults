@@ -79,7 +79,7 @@
     function sendMessage() {
         var xhr = new XMLHttpRequest();
         var formData = new FormData(document.getElementById('chatForm'));
-        xhr.open('POST', 'chat_bot.php', true); // Path to your PHP email sending script
+        xhr.open('POST', 'php/chat_bot.php', true); // Path to your PHP email sending script
         xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
