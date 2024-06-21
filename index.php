@@ -39,6 +39,109 @@
 </head>
 
 <body>
+      <!-- ======= CHAT BOT ================================ ======= -->
+      <title>Expandable Chat Button</title>
+    <style>
+     
+    </style>
+
+    <!-- Chat button -->
+    <div class="chat-button" id="chatButton" onclick="toggleChat()"><i class="fa fa-comments"></i></div>
+
+    <!-- Chat container -->
+    <div class="chat-container" id="chatContainer">
+        <!-- Chat header (click to close) -->
+        <div class="chat-header" onclick="toggleChat()">Close Chat</div>
+        
+        <!-- Chat messages container -->
+        <div class="message-container" id="messageContainer"></div>
+        
+        <!-- Chat form -->
+        <form class="chat-form" id="chatForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="button" onclick="sendMessage()">Send</button>
+        </form>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+        var chatContainer = document.getElementById('chatContainer');
+        var messageContainer = document.getElementById('messageContainer');
+
+        function toggleChat() {
+            chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function sendMessage() {
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var message = document.getElementById('message').value.trim();
+
+            if (name !== '' && email !== '' && message !== '') {
+                // Adiciona a mensagem ao container de mensagens
+                addMessage(name, message);
+
+                // Exibe a mensagem de confirmação
+                showConfirmation();
+
+                // Limpa os campos do formulário
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+
+                // Fecha o chat após enviar a mensagem
+                setTimeout(function() {
+                    chatContainer.style.display = 'none';
+                }, 5000); // Fecha o chat após 5 segundos (5000 milissegundos)
+            } else {
+                // Exibe mensagem de erro dentro do chat
+                showErrorMessage('Please fill in all fields.');
+            }
+        }
+
+        function addMessage(name, message) {
+            var messageElement = document.createElement('div');
+            messageElement.classList.add('message');
+            messageElement.innerHTML = '<strong>' + name + ':</strong> ' + message;
+
+            // Adiciona a mensagem ao container de mensagens
+            messageContainer.appendChild(messageElement);
+
+            // Role até o final do container de mensagens
+            messageContainer.scrollTop = messageContainer.scrollHeight;
+        }
+
+        function showConfirmation() {
+            var confirmationElement = document.createElement('div');
+            confirmationElement.classList.add('confirmation-message');
+            confirmationElement.textContent = 'Your message has been sent. We will get back to you via email. Thank you!';
+
+            // Adiciona a mensagem de confirmação ao container de mensagens
+            messageContainer.appendChild(confirmationElement);
+
+            // Role até o final do container de mensagens
+            messageContainer.scrollTop = messageContainer.scrollHeight;
+        }
+
+        function showErrorMessage(message) {
+            var errorElement = document.createElement('div');
+            errorElement.classList.add('error-message');
+            errorElement.textContent = message;
+
+            // Adiciona a mensagem de erro ao container de mensagens
+            messageContainer.appendChild(errorElement);
+
+            // Role até o final do container de mensagens
+            messageContainer.scrollTop = messageContainer.scrollHeight;
+        }
+    </script>
+    <!-- Font Awesome CDN para o ícone de chat -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
+    <!-- ======= CHAT BOT ================================ ======= -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -1570,8 +1673,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a> -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
