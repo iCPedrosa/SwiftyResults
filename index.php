@@ -785,12 +785,13 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
               <h3 style="color: #07d5c0;">Starter Shopify Setup</h3>
-              <div class="price"><sup>$</sup>199<span> / one-time</span></div>
+              <div class="price"><sup>$</sup>499<span> / one-time</span></div>
               <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
               <ul>
                 <li>Basic setup for a one-page Shopify store</li>
                 <li>Theme installation and customization</li>
                 <li>Payment gateway integration</li>
+                <li>10 Winning products setup for you</li>
               </ul>
               <a href="#contact" class="btn-buy">Get Started</a>
             </div>
@@ -800,12 +801,12 @@
             <div class="box">
               <span class="featured">Featured</span>
               <h3 style="color: #65c600;">Standard Shopify Package</h3>
-              <div class="price"><sup>$</sup>499<span> / starting</span></div>
+              <div class="price"><sup>$</sup>999<span> / starting</span></div>
               <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
               <ul>
                 <li>Advanced setup for a multi-page Shopify store</li>
                 <li>Custom theme design</li>
-                <li>Product upload assistance</li>
+                <li>15 Winning Products setup for you</li>
                 <li>Basic SEO optimization</li>
               </ul>
               <a href="#contact" class="btn-buy">Get Started</a>
@@ -815,12 +816,12 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="box">
               <h3 style="color: #ff901c;">Premium Shopify Solution</h3>
-              <div class="price"><sup>$</sup>999<span> / starting</span></div>
+              <div class="price"><sup>$</sup>1999<span> / starting</span></div>
               <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
               <ul>
                 <li>Everything in the Standard plan</li>
-                <li>Custom app integration</li>
                 <li>Winback and Email campaigns</li>
+                <li>20 Winning Products setup for you</li>
                 <li>Priority support</li>
               </ul>
               <a href="#contact" class="btn-buy">Get Started</a>
@@ -834,8 +835,8 @@
               <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
               <ul>
                 <li>Fully customized and scalable solution</li>
-                <li>Advanced features tailored to your needs</li>
-                <li>API integrations</li>
+                <li>Advanced Features tailored for you</li>
+                <li>30+ Winning Products</li>
                 <li>Ongoing support</li>
               </ul>
               <a href="#contact" class="btn-buy">Get Started</a>
@@ -1327,7 +1328,11 @@
       </div>
 
     </section><!-- End Portfolio Section -->
+    <?php
+    $showSection = false; // Set this to true to show the section, false to hide it
 
+    if ($showSection) {
+    ?>
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
 
@@ -1443,7 +1448,10 @@
 
       </div>
 
-    </section><!-- End Testimonials Section -->
+    </section>
+    <?php
+      }
+    ?><!-- End Testimonials Section -->
 
 
 
