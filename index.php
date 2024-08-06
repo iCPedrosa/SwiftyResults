@@ -992,7 +992,7 @@
 
 
 
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
 
             <form action="php/schedule_meeting.php" method="post" class="php-email-form">
               <p>Schedule a 15 Minute With Us</p>
@@ -1003,7 +1003,6 @@
                 <div class="col-md-3">
                   <input type="date" class="form-control" id="date" name="date" placeholder="Date"
                     min="<?php echo date('Y-m-d'); ?>" value="<?php echo date('Y-m-d'); ?>" required>
-                  <!-- Utiliza PHP para definir o mínimo e o valor inicial como o dia atual -->
                 </div>
                 <div class="col-md-3">
                   <select class="form-control" id="time" name="time" required>
@@ -1045,7 +1044,6 @@
                     <option value="16:30">16:30</option>
                     <option value="16:45">16:45</option>
                   </select>
-                  <!-- Options serão geradas dinamicamente via JavaScript -->
                   </select>
                 </div>
                 <div class="col-md-12">
@@ -1060,7 +1058,7 @@
                 </div>
               </div>
             </form>
-          </div>
+          </div> -->
 
 
 
