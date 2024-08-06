@@ -5,7 +5,7 @@ $message = $_POST['message'];
 
 $formcontent=" From: $name \n Email: $email \n Message: $message";
 $subject = "Contact Form";
-$mailheader = "From: $email \r\n";
+$mailheader = "From: icpedrosa@swiftyresults.com \r\n";
 
 try {
     mail("icpedrosa@swiftyresults.com , bernardo.melo@swiftyresults.com, marcus.wagner@swiftyresults.com ", $subject, $formcontent, $mailheader);
