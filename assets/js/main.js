@@ -5,7 +5,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+// At the top of your main.js file
+window.toggleSection = function(sectionId, titleElement) {
+  var section = document.getElementById(sectionId);
+  section.classList.toggle('show');
+  titleElement.classList.toggle('active');
+};
 (function() {
   "use strict";
 

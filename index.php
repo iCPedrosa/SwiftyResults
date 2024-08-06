@@ -211,7 +211,7 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-          <h1 data-aos="fade-up">Transform your Marketing Digitally</b></h1>
+          <h1 data-aos="fade-up">Real Results, Real Swift, Transform your business today.</b></h1>
           <h2 data-aos="fade-up" data-aos-delay="400">We're a small team of experts that have worked with small to mid
             size businesses up to Fortune 500s. Our mission is to enable your success through digital marketing.</h2>
 
@@ -268,103 +268,7 @@
       </div>
 
     </section><!-- End About Section -->
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Team</h2>
-          <p>Our hard working team</p>
-        </header>
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!--<a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>-->
-                  <a href="https://www.linkedin.com/in/icpedrosa/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Israel Pedrosa</h4>
-                <span>Founder and Developer</span>
-                <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from
-                  small businesses to Fortune 500s.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!--<a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>-->
-                  <a href="https://www.linkedin.com/in/ysaenz/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Yasmeen Saenz</h4>
-                <span>Customer Success Manager</span>
-                <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building
-                  strong relationships. 🚀</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/bernardo-xmelo/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Bernardo Melo</h4>
-                <span>Director of Digital & eCommerce Solutions</span>
-                <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist
-                  to assist businesses of all sizes globally with e-commerce solutions.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/marcus-wagner1"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Marcus Wagner</h4>
-                <span>Director, Business Development</span>
-                <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes,
-                  and build partnerships, ensuring your business thrives. Your success is my mission."</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Team Section -->
+    
 
     <!-- ======= Values Section ======= -->
     <!--
@@ -719,7 +623,7 @@
               <h3>Website Development</h3>
               <p>From concept to launch, we craft visually stunning and user-friendly websites. Elevate your online
                 presence with our expert development services.</p>
-              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="#pricing" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -772,83 +676,163 @@
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
-
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h2>Pricing</h2>
           <p>Check our Pricing</p>
         </header>
 
-        <div class="row gy-4" data-aos="fade-left">
+        <div class="pricing-sections">
+          <!-- Shopify Section -->
+          <div class="pricing-section">
+            <h3 class="section-title text-center" onclick="toggleSection('shopify-pricing', this)">Shopify Solutions</h3>
+            <div id="shopify-pricing" class="row gy-4" data-aos="fade-left">
+              <!-- Original Shopify pricing content goes here -->
+              <!-- ... (Your existing Shopify pricing boxes) ... -->
+              <div class="row gy-4 pricing-padding-fix" data-aos="fade-left">
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="box">
-              <h3 style="color: #07d5c0;">Starter Shopify Setup</h3>
-              <div class="price"><sup>$</sup>499<span> / one-time</span></div>
-              <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
-              <ul>
-                <li>Basic setup for a one-page Shopify store</li>
-                <li>Theme installation and customization</li>
-                <li>Payment gateway integration</li>
-                <li>10 Winning products setup for you</li>
-              </ul>
-              <a href="#contact" class="btn-buy">Get Started</a>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="box">
+                    <h3 style="color: #07d5c0;">Starter Shopify Setup</h3>
+                    <div class="price"><sup>$</sup>499<span> / one-time</span></div>
+                    <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+                    <ul>
+                      <li>Basic setup for a one-page Shopify store</li>
+                      <li>Theme installation and customization</li>
+                      <li>Payment gateway integration</li>
+                      <li>10 Winning products setup for you</li>
+                    </ul>
+                    <a href="#contact" class="btn-buy">Get Started</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="box">
+                    <span class="featured">Featured</span>
+                    <h3 style="color: #65c600;">Standard Shopify Package</h3>
+                    <div class="price"><sup>$</sup>999<span> / starting</span></div>
+                    <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
+                    <ul>
+                      <li>Advanced setup for a multi-page Shopify store</li>
+                      <li>Custom theme design</li>
+                      <li>15 Winning Products setup for you</li>
+                      <li>Basic SEO optimization</li>
+                    </ul>
+                    <a href="#contact" class="btn-buy">Get Started</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="box">
+                    <h3 style="color: #ff901c;">Premium Shopify Solution</h3>
+                    <div class="price"><sup>$</sup>1999<span> / starting</span></div>
+                    <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
+                    <ul>
+                      <li>Everything in the Standard plan</li>
+                      <li>Winback and Email campaigns</li>
+                      <li>20 Winning Products setup for you</li>
+                      <li>Priority support</li>
+                    </ul>
+                    <a href="#contact" class="btn-buy">Get Started</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="box">
+                    <h3 style="color: #ff0071;">Enterprise Shopify Package</h3>
+                    <div class="price">Contact us</span></div>
+                    <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
+                    <ul>
+                      <li>Fully customized and scalable solution</li>
+                      <li>Advanced Features tailored for you</li>
+                      <li>30+ Winning Products</li>
+                      <li>Ongoing support</li>
+                    </ul>
+                    <a href="#contact" class="btn-buy">Get Started</a>
+                  </div>
+                </div>
+
+
+              </div>
+
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="box">
-              <span class="featured">Featured</span>
-              <h3 style="color: #65c600;">Standard Shopify Package</h3>
-              <div class="price"><sup>$</sup>999<span> / starting</span></div>
-              <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
-              <ul>
-                <li>Advanced setup for a multi-page Shopify store</li>
-                <li>Custom theme design</li>
-                <li>15 Winning Products setup for you</li>
-                <li>Basic SEO optimization</li>
-              </ul>
-              <a href="#contact" class="btn-buy">Get Started</a>
+          <!-- Website Development Section -->
+          <div class="pricing-section">
+            <h3 class="section-title text-center" onclick="toggleSection('website-pricing', this)">Website Development</h3>
+            <div id="website-pricing" class="row gy-4" data-aos="fade-left" >
+              <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="box">
+                  <h3 style="color: #07d5c0;">Basic Website</h3>
+                  <div class="price"><sup>$</sup>999<span> / Starting</span></div>
+                  <img src="assets/img/pricing-free.png" class="img-fluid" alt="">
+                  <ul>
+                    <li>Establish online presence 24/7</li>
+                    <li>Increase credibility and trust</li>
+                    <li>Showcase products/services</li>
+                    <li>Basic contact form</li>
+                    <li>Mobile-responsive design</li>
+                  </ul>
+                  <a href="#contact" class="btn-buy">Get Started</a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="box">
+                  <span class="featured">Featured</span>
+                  <h3 style="color: #65c600;">Professional Website</h3>
+                  <div class="price"><sup>$</sup>1999<span> / starting</span></div>
+                  <img src="assets/img/pricing-starter.png" class="img-fluid" alt="">
+                  <ul>
+                    <li>All of Basic +</li>
+                    <li>Attract more qualified leads</li>
+                    <li>Improve customer engagement</li>
+                    <li>Basic SEO optimization</li>
+                    <li>Calendar Scheduling Widget</li>
+                  </ul>
+                  <a href="#contact" class="btn-buy">Get Started</a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="box">
+                  <h3 style="color: #ff901c;">Advanced Website</h3>
+                  <div class="price"><sup>$</sup>3499<span> / starting</span></div>
+                  <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
+                  <ul>
+                    <li>Online store integration</li>
+                    <li>Admin portal and analytics integration</li>
+                    <li>Custom tailored solutions</li>
+                    <li>Product catalog management</li>
+                  </ul>
+                  <a href="#contact" class="btn-buy">Get Started</a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="box">
+                  <h3 style="color: #ff0071;">Custom Web Solution</h3>
+                  <div class="price">Contact us</span></div>
+                  <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
+                  <ul>
+                    <li>Tailored to unique business needs</li>
+                    <li>Advanced features and integrations</li>
+                    <li>Scalable for business growth</li>
+                    <li>Ongoing support and maintenance</li>
+                  </ul>
+                  <a href="#contact" class="btn-buy">Get Started</a>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="box">
-              <h3 style="color: #ff901c;">Premium Shopify Solution</h3>
-              <div class="price"><sup>$</sup>1999<span> / starting</span></div>
-              <img src="assets/img/pricing-business.png" class="img-fluid" alt="">
-              <ul>
-                <li>Everything in the Standard plan</li>
-                <li>Winback and Email campaigns</li>
-                <li>20 Winning Products setup for you</li>
-                <li>Priority support</li>
-              </ul>
-              <a href="#contact" class="btn-buy">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="box">
-              <h3 style="color: #ff0071;">Enterprise Shopify Package</h3>
-              <div class="price">Contact us</span></div>
-              <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
-              <ul>
-                <li>Fully customized and scalable solution</li>
-                <li>Advanced Features tailored for you</li>
-                <li>30+ Winning Products</li>
-                <li>Ongoing support</li>
-              </ul>
-              <a href="#contact" class="btn-buy">Get Started</a>
-            </div>
-          </div>
-
-
         </div>
-
       </div>
+    </section>
 
-    </section><!-- End Pricing Section -->
+    <script>
+
+    </script><!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -1064,30 +1048,30 @@
 
 
           <script>
-             document.addEventListener('DOMContentLoaded', function () {
-            // //   const timeSelect = document.getElementById('time');
-            // //   const intervals = 15; // Intervalo de 15 minutos
-            // //   const startHour = 8;
-            // //   const endHour = 17;
-            // //   const inicial = 'Time'
+            document.addEventListener('DOMContentLoaded', function () {
+              // //   const timeSelect = document.getElementById('time');
+              // //   const intervals = 15; // Intervalo de 15 minutos
+              // //   const startHour = 8;
+              // //   const endHour = 17;
+              // //   const inicial = 'Time'
 
-               // Função para gerar as opções de tempo
-            // //   function generateTimeOptions() {
-            // //     timeSelect.innerHTML = ''; // Limpa as opções existentes
-            // //     timeSelect.text = 'Time'
-            // //     for (let hour = startHour; hour < endHour; hour++) {
-            // //       for (let minutes = 0; minutes < 60; minutes += intervals) {
-            // //         const time = `${String(hour).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
-            // //         const option = document.createElement('option');
-                         
-            // //         option.value = time;
-            // //         option.textContent = time;
-            // //         timeSelect.appendChild(option);
-            // //       }
-            // //     }
-            // //   }
+              // Função para gerar as opções de tempo
+              // //   function generateTimeOptions() {
+              // //     timeSelect.innerHTML = ''; // Limpa as opções existentes
+              // //     timeSelect.text = 'Time'
+              // //     for (let hour = startHour; hour < endHour; hour++) {
+              // //       for (let minutes = 0; minutes < 60; minutes += intervals) {
+              // //         const time = `${String(hour).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+              // //         const option = document.createElement('option');
 
-            //   generateTimeOptions(); // Chama a função para gerar as opções de tempo inicialmente
+              // //         option.value = time;
+              // //         option.textContent = time;
+              // //         timeSelect.appendChild(option);
+              // //       }
+              // //     }
+              // //   }
+
+              //   generateTimeOptions(); // Chama a função para gerar as opções de tempo inicialmente
 
               // Adiciona um listener para quando a data for alterada
               document.getElementById('date').addEventListener('input', function () {
@@ -1330,127 +1314,127 @@
     </section><!-- End Portfolio Section -->
     <?php
     $showSection = false; // Set this to true to show the section, false to hide it
-
+    
     if ($showSection) {
-    ?>
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+      ?>
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
 
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <h2>Testimonials</h2>
-          <p>What they are saying about us</p>
-        </header>
+          <header class="section-header">
+            <h2>Testimonials</h2>
+            <p>What they are saying about us</p>
+          </header>
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-          <div class="swiper-wrapper">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+            <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    I've been thoroughly impressed with the Shopify setup service provided by this company. Their
+                    attention to detail and professionalism exceeded my expectations. They made the entire process
+                    seamless and stress-free. Highly recommend!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                    <h3>David Carter</h3>
+                    <h4>Business Owner</h4>
+                  </div>
                 </div>
-                <p>
-                  I've been thoroughly impressed with the Shopify setup service provided by this company. Their
-                  attention to detail and professionalism exceeded my expectations. They made the entire process
-                  seamless and stress-free. Highly recommend!
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>David Carter</h3>
-                  <h4>Business Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    The marketing automation solutions provided by this team have been a game-changer for my business.
+                    Their expertise in automation strategies has significantly improved our efficiency and customer
+                    engagement. Couldn't be happier with the results!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                    <h3>Emily Watson</h3>
+                    <h4>Marketing Director</h4>
+                  </div>
                 </div>
-                <p>
-                  The marketing automation solutions provided by this team have been a game-changer for my business.
-                  Their expertise in automation strategies has significantly improved our efficiency and customer
-                  engagement. Couldn't be happier with the results!
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Emily Watson</h3>
-                  <h4>Marketing Director</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    The CRM implementation service offered by this company was top-notch. From consultation to execution,
+                    they demonstrated expertise and professionalism at every step. Our team now enjoys a more streamlined
+                    and efficient workflow. Highly recommend their services!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                    <h3>Lisa Smith</h3>
+                    <h4>Operations Manager</h4>
+                  </div>
                 </div>
-                <p>
-                  The CRM implementation service offered by this company was top-notch. From consultation to execution,
-                  they demonstrated expertise and professionalism at every step. Our team now enjoys a more streamlined
-                  and efficient workflow. Highly recommend their services!
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Lisa Smith</h3>
-                  <h4>Operations Manager</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    The SMS and email marketing campaigns executed by this team have yielded outstanding results for our
+                    business. Their strategic approach and attention to detail have significantly boosted our customer
+                    engagement and conversions. Highly recommended!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                    <h3>Daniel Adams</h3>
+                    <h4>Marketing Manager</h4>
+                  </div>
                 </div>
-                <p>
-                  The SMS and email marketing campaigns executed by this team have yielded outstanding results for our
-                  business. Their strategic approach and attention to detail have significantly boosted our customer
-                  engagement and conversions. Highly recommended!
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Daniel Adams</h3>
-                  <h4>Marketing Manager</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    The website development service provided by this company surpassed all expectations. They were
+                    attentive to our needs, responsive to feedback, and delivered a website that perfectly reflects our
+                    brand. Exceptional work!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                    <h3>Michael Johnson</h3>
+                    <h4>CEO</h4>
+                  </div>
                 </div>
-                <p>
-                  The website development service provided by this company surpassed all expectations. They were
-                  attentive to our needs, responsive to feedback, and delivered a website that perfectly reflects our
-                  brand. Exceptional work!
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>Michael Johnson</h3>
-                  <h4>CEO</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div><!-- End testimonial item -->
 
 
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
+
         </div>
 
-      </div>
-
-    </section>
-    <?php
-      }
+      </section>
+      <?php
+    }
     ?><!-- End Testimonials Section -->
 
 
@@ -1617,6 +1601,103 @@
       </div>
 
     </section><!-- End Contact Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Team</h2>
+          <p>Our hard working team</p>
+        </header>
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!--<a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>-->
+                  <a href="https://www.linkedin.com/in/icpedrosa/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Israel Pedrosa</h4>
+                <span>Founder and Developer</span>
+                <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from
+                  small businesses to Fortune 500s.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!--<a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>-->
+                  <a href="https://www.linkedin.com/in/ysaenz/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Yasmeen Saenz</h4>
+                <span>Customer Success Manager</span>
+                <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building
+                  strong relationships. 🚀</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/bernardo-xmelo/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Bernardo Melo</h4>
+                <span>Director of Digital & eCommerce Solutions</span>
+                <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist
+                  to assist businesses of all sizes globally with e-commerce solutions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/marcus-wagner1"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Marcus Wagner</h4>
+                <span>Director, Business Development</span>
+                <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes,
+                  and build partnerships, ensuring your business thrives. Your success is my mission."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
 
   </main><!-- End #main -->
 

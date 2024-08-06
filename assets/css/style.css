@@ -2533,3 +2533,49 @@ section {
   border-radius: 4px;
   text-align: center;
 }
+.pricing-sections {
+  margin-top: 2rem;
+}
+
+.pricing-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section-title:hover {
+  background-color: #e9ecef;
+}
+
+.section-title::after {
+  content: '\25BC';
+  float: right;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.section-title.active::after {
+  transform: rotate(180deg);
+}
+
+#shopify-pricing,
+#website-pricing {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#shopify-pricing.show,
+#website-pricing.show {
+  display: flex;
+}
+.pricing-padding-fix{
+  padding-right: 0px !important;
+}
