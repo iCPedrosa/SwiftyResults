@@ -1514,7 +1514,103 @@
       </div>
 
     </section>--><!-- End Recent Blog Posts Section -->
+ <!-- ======= Team Section ======= -->
+ <section id="team" class="team">
 
+<div class="container" data-aos="fade-up">
+
+  <header class="section-header">
+    <h2>Team</h2>
+    <p>Our hard working team</p>
+  </header>
+
+  <div class="row gy-4 justify-content-center">
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="member">
+        <div class="member-img">
+          <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+          <div class="social">
+            <!--<a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>-->
+            <a href="https://www.linkedin.com/in/icpedrosa/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="member-info">
+          <h4>Israel Pedrosa</h4>
+          <span>Founder and Developer</span>
+          <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from
+            small businesses to Fortune 500s.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+      <div class="member">
+        <div class="member-img">
+          <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+          <div class="social">
+            <!--<a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>-->
+            <a href="https://www.linkedin.com/in/ysaenz/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="member-info">
+          <h4>Yasmeen Saenz</h4>
+          <span>Customer Success Manager</span>
+          <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building
+            strong relationships. 🚀</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+      <div class="member">
+        <div class="member-img">
+          <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+          <div class="social">
+            <!-- <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a> -->
+            <a href="https://www.linkedin.com/in/bernardo-xmelo/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="member-info">
+          <h4>Bernardo Melo</h4>
+          <span>Director of Digital & eCommerce Solutions</span>
+          <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist
+            to assist businesses of all sizes globally with e-commerce solutions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+      <div class="member">
+        <div class="member-img">
+          <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
+          <div class="social">
+            <!-- <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a> -->
+            <a href="https://www.linkedin.com/in/marcus-wagner1"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="member-info">
+          <h4>Marcus Wagner</h4>
+          <span>Director, Business Development</span>
+          <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes,
+            and build partnerships, ensuring your business thrives. Your success is my mission."</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</section><!-- End Team Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
 
@@ -1601,103 +1697,7 @@
       </div>
 
     </section><!-- End Contact Section -->
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Team</h2>
-          <p>Our hard working team</p>
-        </header>
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!--<a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>-->
-                  <a href="https://www.linkedin.com/in/icpedrosa/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Israel Pedrosa</h4>
-                <span>Founder and Developer</span>
-                <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from
-                  small businesses to Fortune 500s.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!--<a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>-->
-                  <a href="https://www.linkedin.com/in/ysaenz/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Yasmeen Saenz</h4>
-                <span>Customer Success Manager</span>
-                <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building
-                  strong relationships. 🚀</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/bernardo-xmelo/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Bernardo Melo</h4>
-                <span>Director of Digital & eCommerce Solutions</span>
-                <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist
-                  to assist businesses of all sizes globally with e-commerce solutions.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/marcus-wagner1"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Marcus Wagner</h4>
-                <span>Director, Business Development</span>
-                <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes,
-                  and build partnerships, ensuring your business thrives. Your success is my mission."</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Team Section -->
+   
 
   </main><!-- End #main -->
 
