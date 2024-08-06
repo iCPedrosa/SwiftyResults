@@ -988,7 +988,7 @@
 
 
 
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center">
 
 
 
@@ -1123,7 +1123,7 @@
 
 
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
 
             <form action="php/mail.php" method="post" class="php-email-form">
               <p>Contact Us </p>
