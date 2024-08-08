@@ -1221,7 +1221,7 @@
               </div>
             </div>
           </div>
-
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
@@ -1264,7 +1264,7 @@
               </div>
             </div>
           </div>
-
+        </div>
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
