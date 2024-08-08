@@ -1182,7 +1182,7 @@
                   <div class="portfolio-links">
                     <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery"
                       class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                    <a href="https://www.hableepets.com" target="_blank" title="More Details"><i
+                    <a target="_blank" href="https://www.hableepets.com" target="_blank" title="More Details"><i
                         class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -1198,7 +1198,7 @@
                   <div class="portfolio-links">
                     <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery"
                       class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="https://www.instagram.com/neoxhair/" target="_blank" title="More Details"><i
+                    <a target="_blank" href="https://www.instagram.com/neoxhair/" target="_blank" title="More Details"><i
                         class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -1214,7 +1214,7 @@
                   <div class="portfolio-links">
                     <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery"
                       class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                    <a href="https://eclatjoaillerie.com/" target="_blank" title="More Details"><i
+                    <a target="_blank" href="https://eclatjoaillerie.com/" target="_blank" title="More Details"><i
                         class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -1245,7 +1245,7 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery"
                     class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a href="#" title="More Details"><i class="bi bi-link"></i></a>
+                  <a target="_blank" href="#" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -1259,7 +1259,7 @@
                 <p>Service Business Website</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="https://devbm.my.canva.site/capecoralcrystalpools#home" title="More Details"><i class="bi bi-link"></i></a>
+                  <a target="_blank" href="https://devbm.my.canva.site/capecoralcrystalpools#home" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
