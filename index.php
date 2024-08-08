@@ -1245,25 +1245,25 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery"
                     class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="#" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="https://devbm.my.canva.site/capecoralcrystalpools#home" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
