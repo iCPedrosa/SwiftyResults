@@ -1172,7 +1172,7 @@
           </div>
 
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+<!-- HableePets-->
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
@@ -1188,7 +1188,7 @@
                 </div>
               </div>
             </div>
-
+<!-- Victory Fitness ​Club-->
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/Victory Fitness ​Club.png" class="img-fluid" alt="">
@@ -1204,17 +1204,17 @@
                 </div>
               </div>
             </div>
-
+<!-- Winslough Car Repair-->
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/Winslough Car Repair.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>eClat Jewlery</h4>
-                  <p>Shopify eCommerce</p>
+                  <h4>Winslough Car Repair</h4>
+                  <p>Service Business Website</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery"
+                    <a href="assets/img/portfolio/Winslough Car Repair.png" data-gallery="portfolioGallery"
                       class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                    <a target="_blank" href="https://eclatjoaillerie.com/" target="_blank" title="More Details"><i
+                    <a target="_blank" href="https://devbm.my.canva.site/winslough" target="_blank" title="More Details"><i
                         class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -1238,19 +1238,19 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/PureClean ​Residential.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>4Beauty</h4>
-                <p>eCommerce Web</p>
+                <h4>PureClean ​Residential</h4>
+                <p>Service Business Website</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery"
+                  <a href="assets/img/portfolio/PureClean ​Residential.jpg" data-gallery="portfolioGallery"
                     class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a target="_blank" href="#" title="More Details"><i class="bi bi-link"></i></a>
+                  <a target="_blank" href="https://devbm.my.canva.site/pureclean-residential" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
+<!-- SWFL Pool Perfection-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
