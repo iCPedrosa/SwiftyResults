@@ -1191,14 +1191,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/Victory Fitness ​Club.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>NeoxHair</h4>
-                  <p>eCommerce Web</p>
+                  <h4>Victory Fitness ​Club</h4>
+                  <p>Service Business Website</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery"
+                    <a href="assets/img/portfolio/Victory Fitness ​Club.png" data-gallery="portfolioGallery"
                       class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/neoxhair/" target="_blank" title="More Details"><i
+                    <a target="_blank" href="https://devbm.my.canva.site/victory-fitness-club" target="_blank" title="More Details"><i
                         class="bi bi-link"></i></a>
                   </div>
                 </div>
