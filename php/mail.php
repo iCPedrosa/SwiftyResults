@@ -1,18 +1,16 @@
 <?php
-// Função para validar email com regex
 function isValidEmail($email) {
-    // Regex para validar emails, verifica a presença de @ e .
+
     return preg_match('/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z]{2,}$/i', $email);
 }
 
-// Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Captura os dados enviados
+
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
     $message = trim($_POST['message']);
 
-    // Verifica se todos os campos estão preenchidos corretamente e se o email é válido
+    
     if (!empty($name) && !empty($email) && !empty($message) && isValidEmail($email)) {
         $formcontent = "From: $name \nEmail: $email \nMessage: $message";
         $subject = "Contact Form";
@@ -23,11 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header('HTTP/1.1 200 OK');
             echo "Your message has been sent successfully.";
         } catch (Exception $ex) {
-            // Exibe a mensagem de erro em caso de exceção
+            
             echo "Error: " . $ex->getMessage();
         }
     } else {
-        // Mensagem de erro caso algum campo esteja vazio ou o e-mail seja inválido
+        
         echo "Please fill in all fields correctly with a valid email address.";
     }
 } else {
