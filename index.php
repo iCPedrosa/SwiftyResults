@@ -29,6 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
   <!-- =======================================================
   * Template Name: SwiftyResults
   * Template URL: https://bootstrapmade.com/SwiftyResults-bootstrap-startup-template/
@@ -71,7 +72,7 @@
       var formData = new FormData(document.getElementById('chatForm'));
       xhr.open('POST', 'php/chat_bot.php', true);
       xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-      xhr.onreadystatechange = function () {
+      xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
           if (xhr.status === 200) {
             var response = JSON.parse(xhr.responseText);
@@ -80,7 +81,7 @@
               document.getElementById('name').value = '';
               document.getElementById('email').value = '';
               document.getElementById('message').value = '';
-              setTimeout(function () {
+              setTimeout(function() {
                 toggleChat();
               }, 5000);
             } else {
@@ -133,6 +134,8 @@
 
 
   <!-- ======= CHAT BOT ================================ ======= -->
+
+  
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -194,7 +197,7 @@
               </li>
             </ul>
           </li>
--->
+          -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
@@ -268,7 +271,7 @@
       </div>
 
     </section><!-- End About Section -->
-    
+
 
     <!-- ======= Values Section ======= -->
     <!--
@@ -761,7 +764,7 @@
           <!-- Website Development Section -->
           <div class="pricing-section">
             <h3 class="section-title text-center" onclick="toggleSection('website-pricing', this)">Website Development</h3>
-            <div id="website-pricing" class="row gy-4" data-aos="fade-left" >
+            <div id="website-pricing" class="row gy-4" data-aos="fade-left">
               <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="box">
                   <h3 style="color: #07d5c0;">Basic Website</h3>
@@ -1048,7 +1051,7 @@
 
 
           <script>
-            document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('DOMContentLoaded', function() {
               // //   const timeSelect = document.getElementById('time');
               // //   const intervals = 15; // Intervalo de 15 minutos
               // //   const startHour = 8;
@@ -1074,7 +1077,7 @@
               //   generateTimeOptions(); // Chama a função para gerar as opções de tempo inicialmente
 
               // Adiciona um listener para quando a data for alterada
-              document.getElementById('date').addEventListener('input', function () {
+              document.getElementById('date').addEventListener('input', function() {
                 validateDate(); // Chama a função para validar a data sempre que ela mudar
               });
 
@@ -1089,7 +1092,6 @@
                 }
               }
             });
-
           </script>
 
 
@@ -1150,6 +1152,10 @@
       </div>
       </div>
     </section><!-- End Contact Section -->
+
+
+
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="row gy-4">
@@ -1172,7 +1178,7 @@
           </div>
 
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-<!-- HableePets-->
+            <!-- HableePets-->
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
@@ -1188,7 +1194,7 @@
                 </div>
               </div>
             </div>
-<!-- Victory Fitness ​Club-->
+            <!-- Victory Fitness ​Club-->
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/Victory Fitness ​Club.png" class="img-fluid" alt="">
@@ -1204,7 +1210,7 @@
                 </div>
               </div>
             </div>
-<!-- Winslough Car Repair-->
+            <!-- Winslough Car Repair-->
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/Winslough Car Repair.png" class="img-fluid" alt="">
@@ -1221,8 +1227,8 @@
               </div>
             </div>
           </div>
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -1235,38 +1241,38 @@
               </div>
             </div>
           </div> -->
-          
-<!-- PureClean ​Residential-->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/PureClean ​Residential.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>PureClean ​Residential</h4>
-                <p>Service Business Website</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/PureClean ​Residential.jpg" data-gallery="portfolioGallery"
-                    class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a target="_blank" href="https://devbm.my.canva.site/pureclean-residential" title="More Details"><i class="bi bi-link"></i></a>
+            <!-- PureClean ​Residential-->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/PureClean ​Residential.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>PureClean ​Residential</h4>
+                  <p>Service Business Website</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/PureClean ​Residential.jpg" data-gallery="portfolioGallery"
+                      class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                    <a target="_blank" href="https://devbm.my.canva.site/pureclean-residential" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SWFL Pool Perfection-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>SWFL Pool Perfection</h4>
+                  <p>Service Business Website</p>
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                    <a target="_blank" href="https://devbm.my.canva.site/capecoralcrystalpools#home" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-<!-- SWFL Pool Perfection-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SWFL Pool Perfection</h4>
-                <p>Service Business Website</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a target="_blank" href="https://devbm.my.canva.site/capecoralcrystalpools#home" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
@@ -1314,11 +1320,230 @@
       </div>
 
     </section><!-- End Portfolio Section -->
+
+    
+
+
+
+              <!-- ======= Testimonial Section ======= -->
+<section id="testimonials" class="testimonials">
+
+<div class="container" data-aos="fade-up">
+
+  <header class="section-header">
+    <h2>Testimonials</h2>
+    <p>What our clients are saying about us</p>
+  </header>
+
+  <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+    <div class="swiper-wrapper">
+<!-- Testimonial 1 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-1.jpg" class="testimonial-img" alt="">
+      <h3>Tom Reynolds</h3>
+      <h4>Owner, CleanWave Pools</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      SwiftyResults helped us streamline our scheduling and customer communication. Our pool cleaning business has never been more efficient.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 2 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
+      <h3>Linda Harris</h3>
+      <h4>Owner, GreenThumb Lawn Care</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      Thanks to SwiftyResults, our lawn care service is now fully booked weeks in advance. Their marketing strategies really work for small businesses.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 3 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-3.jpg" class="testimonial-img" alt="">
+      <h3>Mark Stevens</h3>
+      <h4>Owner, SparkleClean Maid Service</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      SwiftyResults revamped our online presence, making it easier for customers to book our cleaning services. We've seen a big increase in new clients.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 4 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-4.jpg" class="testimonial-img" alt="">
+      <h3>Susan Miller</h3>
+      <h4>Owner, PetCare Plus</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      With SwiftyResults, we were able to optimize our pet sitting service scheduling system, saving us time and improving our service quality.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 5 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-5.jpg" class="testimonial-img" alt="">
+      <h3>Jim Thompson</h3>
+      <h4>Owner, Pristine Auto Detailing</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      SwiftyResults delivered a professional website that reflects the quality of our car detailing services. We've received numerous compliments from our customers.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 6 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-6.jpg" class="testimonial-img" alt="">
+      <h3>Rachel Peterson</h3>
+      <h4>Owner, FreshBake Bakery</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      Our business has grown significantly since we started working with SwiftyResults. Their digital marketing solutions are perfect for small bakeries like ours.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 7 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-7.jpg" class="testimonial-img" alt="">
+      <h3>David Rogers</h3>
+      <h4>Owner, ClearWater Pool Cleaning</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      SwiftyResults helped us simplify our billing and customer tracking. We're now running a much smoother operation.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 8 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-8.jpg" class="testimonial-img" alt="">
+      <h3>Karen White</h3>
+      <h4>Owner, Neighborhood Coffee Shop</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      We've been able to attract more customers and keep them coming back, thanks to the excellent online ordering system from SwiftyResults.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 9 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-9.jpg" class="testimonial-img" alt="">
+      <h3>Mike Dawson</h3>
+      <h4>Owner, Sparkling Cleaners</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      SwiftyResults provided us with the tools we needed to manage our dry cleaning business more effectively. Our clients have noticed the difference.
+    </p>
+  </div>
+</div>
+
+<!-- Testimonial 10 -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="profile">
+      <img src="assets/img/testimonials/testimonial-10.jpg" class="testimonial-img" alt="">
+      <h3>Sarah Bennett</h3>
+      <h4>Owner, HomeFix Handyman Services</h4>
+      <div class="stars">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <p>
+      The team at SwiftyResults truly understands the needs of small businesses. Their services have been invaluable to our handyman services company.
+    </p>
+  </div>
+</div>
+
+
+      <!-- Continue with more testimonials -->
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</div>
+
+</section>
+<!-- End Testimonial Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <?php
     $showSection = false; // Set this to true to show the section, false to hide it
-    
+
     if ($showSection) {
-      ?>
+    ?>
+
+
+
+
+
+
+
       <!-- ======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials">
 
@@ -1435,7 +1660,7 @@
         </div>
 
       </section>
-      <?php
+    <?php
     }
     ?><!-- End Testimonials Section -->
 
@@ -1516,103 +1741,103 @@
       </div>
 
     </section>--><!-- End Recent Blog Posts Section -->
- <!-- ======= Team Section ======= -->
- <section id="team" class="team">
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
 
-<div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
 
-  <header class="section-header">
-    <h2>Team</h2>
-    <p>Our hard working team</p>
-  </header>
+        <header class="section-header">
+          <h2>Team</h2>
+          <p>Our hard working team</p>
+        </header>
 
-  <div class="row gy-4 justify-content-center">
+        <div class="row gy-4 justify-content-center">
 
-    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-      <div class="member">
-        <div class="member-img">
-          <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <!--<a href=""><i class="bi bi-twitter"></i></a>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!--<a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>-->
-            <a href="https://www.linkedin.com/in/icpedrosa/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/icpedrosa/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Israel Pedrosa</h4>
+                <span>Founder and Developer</span>
+                <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from
+                  small businesses to Fortune 500s.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="member-info">
-          <h4>Israel Pedrosa</h4>
-          <span>Founder and Developer</span>
-          <p>Israel is a seasoned technologist having worked with and delivered pivotal digital solutions from
-            small businesses to Fortune 500s.</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-      <div class="member">
-        <div class="member-img">
-          <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <!--<a href=""><i class="bi bi-twitter"></i></a>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!--<a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>-->
-            <a href="https://www.linkedin.com/in/ysaenz/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/ysaenz/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Yasmeen Saenz</h4>
+                <span>Customer Success Manager</span>
+                <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building
+                  strong relationships. 🚀</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="member-info">
-          <h4>Yasmeen Saenz</h4>
-          <span>Customer Success Manager</span>
-          <p>Yasmeen ensures clients achieve their goals by understanding needs, guiding adoption, and building
-            strong relationships. 🚀</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-      <div class="member">
-        <div class="member-img">
-          <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <!-- <a href=""><i class="bi bi-twitter"></i></a>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a> -->
-            <a href="https://www.linkedin.com/in/bernardo-xmelo/"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/bernardo-xmelo/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Bernardo Melo</h4>
+                <span>Director of Digital & eCommerce Solutions</span>
+                <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist
+                  to assist businesses of all sizes globally with e-commerce solutions.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="member-info">
-          <h4>Bernardo Melo</h4>
-          <span>Director of Digital & eCommerce Solutions</span>
-          <p>With a humble approach, Bernardo applies his expertise as a Shopify developer and digital strategist
-            to assist businesses of all sizes globally with e-commerce solutions.</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-      <div class="member">
-        <div class="member-img">
-          <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
-          <div class="social">
-            <!-- <a href=""><i class="bi bi-twitter"></i></a>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a> -->
-            <a href="https://www.linkedin.com/in/marcus-wagner1"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/marcus-wagner1"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Marcus Wagner</h4>
+                <span>Director, Business Development</span>
+                <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes,
+                  and build partnerships, ensuring your business thrives. Your success is my mission."</p>
+              </div>
+            </div>
           </div>
+
         </div>
-        <div class="member-info">
-          <h4>Marcus Wagner</h4>
-          <span>Director, Business Development</span>
-          <p>"As a dedicated business guide, I work tirelessly to identify opportunities, streamline processes,
-            and build partnerships, ensuring your business thrives. Your success is my mission."</p>
-        </div>
+
       </div>
-    </div>
 
-  </div>
-
-</div>
-
-</section><!-- End Team Section -->
+    </section><!-- End Team Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
 
@@ -1699,7 +1924,7 @@
       </div>
 
     </section><!-- End Contact Section -->
-   
+
 
   </main><!-- End #main -->
 
@@ -1807,7 +2032,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <?php include_once ("php/analyticstracking.php") ?>
+  <?php include_once("php/analyticstracking.php") ?>
 </body>
 
 </html>
