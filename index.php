@@ -214,9 +214,9 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-          <h1 data-aos="fade-up">Real Results, Real Swift, Transform your business today.</b></h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We're a small team of experts that have worked with small to mid
-            size businesses up to Fortune 500s. Our mission is to enable your success through digital marketing.</h2>
+          <h1 data-aos="fade-up">Navigate the digital landscape with trust at SwiftyResults.</b></h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">We want to make it easy and affordable for you to get your business online. We're a small team of experts that have worked with small to mid
+            size businesses up to Fortune 500s.</h2>
 
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
@@ -851,6 +851,20 @@
           <div class="col-lg-6">
             <!-- F.A.Q List 1-->
             <div class="accordion accordion-flush" id="faqlist1">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1">
+                    How does it work?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    We'll set up a discovery call to understand what your vision is, if you're local to southwest Florida, we can even meet in person. 
+                    We'll talk about what's doable and what isnt and offer you different options that meet your budget. Once the work is completed you'll have options for revision, training and ongoing maintenance to fit your needs.
+                  </div>
+                </div>
+              </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -905,7 +919,22 @@
 
             <!-- F.A.Q List 2-->
             <div class="accordion accordion-flush" id="faqlist2">
-
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2-content-1">
+                    How long does it typically take to complete a website development project?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                  Website development timelines vary based on complexity. Simple sites (5-10 pages) typically take 1-2 weeks, 
+                  medium-sized sites (10-20 pages) with custom functionality take 2-4 weeks, and large, 
+                  complex sites may require 4-8 weeks or more. Factors affecting timelines include design complexity, 
+                  custom features, e-commerce needs, content readiness, and client feedback turnaround time.
+                  </div>
+                </div>
+              </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
