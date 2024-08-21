@@ -135,7 +135,7 @@
 
   <!-- ======= CHAT BOT ================================ ======= -->
 
-  
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -214,7 +214,7 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-          <h1 data-aos="fade-up">Navigate the digital landscape with trust at SwiftyResults.</b></h1>
+        <h1 data-aos="fade-up">Navigate the digital landscape with trust at SwiftyResults.</b></h1>
           <h2 data-aos="fade-up" data-aos-delay="400">We want to make it easy and affordable for you to get your business online. We're a small team of experts that have worked with small to mid
             size businesses up to Fortune 500s.</h2>
 
@@ -611,74 +611,163 @@
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Shopify Solutions</h3>
-              <p>Transform your e-commerce experience with tailored Shopify solutions. Streamline your store setup,
-                enhance user experience, and boost sales.</p>
-              <a href="#pricing" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="service-box blue flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="ri-discuss-line icon"></i>
+                  <h3>Shopify Solutions</h3>
+                  <p>Transform your e-commerce experience with tailored Shopify solutions. Streamline your store setup, enhance user experience, and boost sales.</p>
+                  <a href="javascript:void(0)" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Shopify Solutions</h3>
+
+                  <p>Fully functional Shopify store
+                    <br>Custom theme design files
+                    <br> Product catalog setup
+                    <br> Payment gateway integration
+                    <br> Training documentation for store management
+                  </p>
+
+                  <a href="javascript:void(0)" class="read-less"><span>Show Less</span> <i class="bi bi-arrow-left"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Website Development</h3>
-              <p>From concept to launch, we craft visually stunning and user-friendly websites. Elevate your online
-                presence with our expert development services.</p>
-              <a href="#pricing" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="service-box orange flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="ri-discuss-line icon"></i>
+                  <h3>Website Development</h3>
+                  <p>From concept to launch, we craft visually stunning and user-friendly websites. Elevate your online presence with our expert development services.</p>
+                  <a href="javascript:void(0)" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Website Development</h3>
+                  <p>Responsive website<br>
+                    Content Management System<br>
+                    SEO-optimized site structure<br>
+                    Web hosting setup (if included)<br>
+                    Training on website maintenance</p>
+                  <a href="javascript:void(0)" class="read-less"><span>Show Less</span> <i class="bi bi-arrow-left"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Marketing Automation</h3>
-              <p>Maximize efficiency and drive growth with marketing automation solutions. Engage customers, nurture
-                leads, and analyze performance seamlessly.</p>
-              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="service-box green flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="ri-discuss-line icon"></i>
+                  <h3>Marketing Automation</h3>
+                  <p>Maximize efficiency and drive growth with marketing automation solutions. Engage customers, nurture leads, and analyze performance seamlessly.</p>
+                  <a href="javascript:void(0)" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Marketing Automation</h3>
+                  <p>Configured marketing automation <br>
+                    Set of automated workflows and email templates<br>
+                    Integration with existing CRM or other tools<br>
+                    Dashboard for campaign monitoring<br>
+                    Initial set of segmented contact lists</p>
+
+                  <a href="javascript:void(0)" class="read-less"><span>Show Less</span> <i class="bi bi-arrow-left"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box red">
-              <i class="ri-discuss-line icon"></i>
-              <h3>CRM Implementation</h3>
-              <p>Empower your team and strengthen customer relationships with customized CRM solutions. Unlock insights,
-                streamline processes, and drive revenue.</p>
-              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="service-box red flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="ri-discuss-line icon"></i>
+                  <h3>CRM Implementation</h3>
+                  <p>Empower your team and strengthen customer relationships with customized CRM solutions. Unlock insights, streamline processes, and drive revenue.</p>
+                  <a href="javascript:void(0)" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="flip-card-back">
+                  <h3>CRM Implementation</h3>
+                  <p>Installed and configured CRM system<br>
+                    Customized fields and layouts<br>
+                    Imported and cleaned customer data<br>
+                    Set of custom reports and dashboards<br>
+                    User access setup and permissions</p>
+                  <a href="javascript:void(0)" class="read-less"><span>Show Less</span> <i class="bi bi-arrow-left"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box purple">
-              <i class="ri-discuss-line icon"></i>
-              <h3>SMS and Email Marketing</h3>
-              <p>Reach your audience effectively with targeted SMS and email marketing campaigns. Drive engagement,
-                conversions, and brand loyalty effortlessly.</p>
-              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="service-box purple flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="ri-discuss-line icon"></i>
+                  <h3>SMS and Email Marketing</h3>
+                  <p>Reach your audience effectively with targeted SMS and email marketing campaigns. Drive engagement, conversions, and brand loyalty effortlessly.</p>
+                  <a href="javascript:void(0)" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="flip-card-back">
+                  <h3>SMS and Email Marketing</h3>
+                  <p>Configured email marketing platform<br>
+                    Set of branded email templates<br>
+                    Initial campaign strategy document<br>
+                    SMS sending capability setup<br>
+                    Subscription management system</p>
+                  <a href="javascript:void(0)" class="read-less"><span>Show Less</span> <i class="bi bi-arrow-left"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Custom Solutions</h3>
-              <p>Have a unique need? Let's discuss. Our team specializes in crafting bespoke digital solutions tailored
-                to your specific requirements and goals.</p>
-              <a href="#contact" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            <div class="service-box pink flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="ri-discuss-line icon"></i>
+                  <h3>Custom Solutions</h3>
+                  <p>Have a unique need? Let's discuss. Our team specializes in crafting bespoke digital solutions tailored to your specific requirements and goals.</p>
+                  <a href="javascript:void(0)" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Custom Solutions</h3>
+                  <p>Custom-developed software application<br>
+                    Source code (if agreed upon)<br>
+                    User documentation<br>
+                    Admin panel or management interface<br>
+                    API documentation (if applicable)</p>
+                  <a href="javascript:void(0)" class="read-less"><span>Show Less</span> <i class="bi bi-arrow-left"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
-
         </div>
 
-      </div>
+        <script>
+          document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function() {
+              const card = this.closest('.flip-card');
+              card.classList.add('flipped');
+            });
+          });
+
+          document.querySelectorAll('.read-less').forEach(button => {
+            button.addEventListener('click', function() {
+              const card = this.closest('.flip-card');
+              card.classList.remove('flipped');
+            });
+          });
+        </script>
 
     </section><!-- End Services Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <h2>Pricing</h2>
@@ -687,12 +776,12 @@
 
         <div class="pricing-sections">
           <!-- Shopify Section -->
-          <div class="pricing-section">
+         <!-- <div class="pricing-section">
             <h3 class="section-title text-center" onclick="toggleSection('shopify-pricing', this)">Shopify Solutions</h3>
             <div id="shopify-pricing" class="row gy-4" data-aos="fade-left">
               <!-- Original Shopify pricing content goes here -->
               <!-- ... (Your existing Shopify pricing boxes) ... -->
-              <div class="row gy-4 pricing-padding-fix" data-aos="fade-left">
+           <!--   <div class="row gy-4 pricing-padding-fix" data-aos="fade-left">
 
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                   <div class="box">
@@ -759,10 +848,10 @@
               </div>
 
             </div>
-          </div>
+          </div> -->
 
           <!-- Website Development Section -->
-          <div class="pricing-section">
+         <!--  <div class="pricing-section">
             <h3 class="section-title text-center" onclick="toggleSection('website-pricing', this)">Website Development</h3>
             <div id="website-pricing" class="row gy-4" data-aos="fade-left">
               <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
@@ -835,7 +924,7 @@
 
     <script>
 
-    </script><!-- End Pricing Section -->
+    </script>--><!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -919,22 +1008,7 @@
 
             <!-- F.A.Q List 2-->
             <div class="accordion accordion-flush" id="faqlist2">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq2-content-1">
-                    How long does it typically take to complete a website development project?
-                  </button>
-                </h2>
-                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                  Website development timelines vary based on complexity. Simple sites (5-10 pages) typically take 1-2 weeks, 
-                  medium-sized sites (10-20 pages) with custom functionality take 2-4 weeks, and large, 
-                  complex sites may require 4-8 weeks or more. Factors affecting timelines include design complexity, 
-                  custom features, e-commerce needs, content readiness, and client feedback turnaround time.
-                  </div>
-                </div>
-              </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1350,203 +1424,203 @@
 
     </section><!-- End Portfolio Section -->
 
-    
 
 
 
-              <!-- ======= Testimonial Section ======= -->
-<section id="testimonials" class="testimonials">
 
-<div class="container" data-aos="fade-up">
+    <!-- ======= Testimonial Section ======= -->
+    <section id="testimonials" class="testimonials">
 
-  <header class="section-header">
-    <h2>Testimonials</h2>
-    <p>What our clients are saying about us</p>
-  </header>
+      <div class="container" data-aos="fade-up">
 
-  <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-    <div class="swiper-wrapper">
-<!-- Testimonial 1 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-1.jpg" class="testimonial-img" alt="">
-      <h3>Tom Reynolds</h3>
-      <h4>Owner, CleanWave Pools</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        <header class="section-header">
+          <h2>Testimonials</h2>
+          <p>What our clients are saying about us</p>
+        </header>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-1.jpg" class="testimonial-img" alt="">
+                  <h3>Tom Reynolds</h3>
+                  <h4>Owner, CleanWave Pools</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  SwiftyResults helped us streamline our scheduling and customer communication. Our pool cleaning business has never been more efficient.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
+                  <h3>Linda Harris</h3>
+                  <h4>Owner, GreenThumb Lawn Care</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  Thanks to SwiftyResults, our lawn care service is now fully booked weeks in advance. Their marketing strategies really work for small businesses.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-3.jpg" class="testimonial-img" alt="">
+                  <h3>Mark Stevens</h3>
+                  <h4>Owner, SparkleClean Maid Service</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  SwiftyResults revamped our online presence, making it easier for customers to book our cleaning services. We've seen a big increase in new clients.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-4.jpg" class="testimonial-img" alt="">
+                  <h3>Susan Miller</h3>
+                  <h4>Owner, PetCare Plus</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  With SwiftyResults, we were able to optimize our pet sitting service scheduling system, saving us time and improving our service quality.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-5.jpg" class="testimonial-img" alt="">
+                  <h3>Jim Thompson</h3>
+                  <h4>Owner, Pristine Auto Detailing</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  SwiftyResults delivered a professional website that reflects the quality of our car detailing services. We've received numerous compliments from our customers.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-6.jpg" class="testimonial-img" alt="">
+                  <h3>Rachel Peterson</h3>
+                  <h4>Owner, FreshBake Bakery</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  Our business has grown significantly since we started working with SwiftyResults. Their digital marketing solutions are perfect for small bakeries like ours.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 7 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-7.jpg" class="testimonial-img" alt="">
+                  <h3>David Rogers</h3>
+                  <h4>Owner, ClearWater Pool Cleaning</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  SwiftyResults helped us simplify our billing and customer tracking. We're now running a much smoother operation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 8 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-8.jpg" class="testimonial-img" alt="">
+                  <h3>Karen White</h3>
+                  <h4>Owner, Neighborhood Coffee Shop</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  We've been able to attract more customers and keep them coming back, thanks to the excellent online ordering system from SwiftyResults.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 9 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-9.jpg" class="testimonial-img" alt="">
+                  <h3>Mike Dawson</h3>
+                  <h4>Owner, Sparkling Cleaners</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  SwiftyResults provided us with the tools we needed to manage our dry cleaning business more effectively. Our clients have noticed the difference.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 10 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/testimonial-10.jpg" class="testimonial-img" alt="">
+                  <h3>Sarah Bennett</h3>
+                  <h4>Owner, HomeFix Handyman Services</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  The team at SwiftyResults truly understands the needs of small businesses. Their services have been invaluable to our handyman services company.
+                </p>
+              </div>
+            </div>
+
+
+            <!-- Continue with more testimonials -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </div>
-    </div>
-    <p>
-      SwiftyResults helped us streamline our scheduling and customer communication. Our pool cleaning business has never been more efficient.
-    </p>
-  </div>
-</div>
 
-<!-- Testimonial 2 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
-      <h3>Linda Harris</h3>
-      <h4>Owner, GreenThumb Lawn Care</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      Thanks to SwiftyResults, our lawn care service is now fully booked weeks in advance. Their marketing strategies really work for small businesses.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 3 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-3.jpg" class="testimonial-img" alt="">
-      <h3>Mark Stevens</h3>
-      <h4>Owner, SparkleClean Maid Service</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      SwiftyResults revamped our online presence, making it easier for customers to book our cleaning services. We've seen a big increase in new clients.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 4 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-4.jpg" class="testimonial-img" alt="">
-      <h3>Susan Miller</h3>
-      <h4>Owner, PetCare Plus</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      With SwiftyResults, we were able to optimize our pet sitting service scheduling system, saving us time and improving our service quality.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 5 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-5.jpg" class="testimonial-img" alt="">
-      <h3>Jim Thompson</h3>
-      <h4>Owner, Pristine Auto Detailing</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      SwiftyResults delivered a professional website that reflects the quality of our car detailing services. We've received numerous compliments from our customers.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 6 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-6.jpg" class="testimonial-img" alt="">
-      <h3>Rachel Peterson</h3>
-      <h4>Owner, FreshBake Bakery</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      Our business has grown significantly since we started working with SwiftyResults. Their digital marketing solutions are perfect for small bakeries like ours.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 7 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-7.jpg" class="testimonial-img" alt="">
-      <h3>David Rogers</h3>
-      <h4>Owner, ClearWater Pool Cleaning</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      SwiftyResults helped us simplify our billing and customer tracking. We're now running a much smoother operation.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 8 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-8.jpg" class="testimonial-img" alt="">
-      <h3>Karen White</h3>
-      <h4>Owner, Neighborhood Coffee Shop</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      We've been able to attract more customers and keep them coming back, thanks to the excellent online ordering system from SwiftyResults.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 9 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-9.jpg" class="testimonial-img" alt="">
-      <h3>Mike Dawson</h3>
-      <h4>Owner, Sparkling Cleaners</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      SwiftyResults provided us with the tools we needed to manage our dry cleaning business more effectively. Our clients have noticed the difference.
-    </p>
-  </div>
-</div>
-
-<!-- Testimonial 10 -->
-<div class="swiper-slide">
-  <div class="testimonial-item">
-    <div class="profile">
-      <img src="assets/img/testimonials/testimonial-10.jpg" class="testimonial-img" alt="">
-      <h3>Sarah Bennett</h3>
-      <h4>Owner, HomeFix Handyman Services</h4>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-    </div>
-    <p>
-      The team at SwiftyResults truly understands the needs of small businesses. Their services have been invaluable to our handyman services company.
-    </p>
-  </div>
-</div>
-
-
-      <!-- Continue with more testimonials -->
-
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-</div>
-
-</section>
-<!-- End Testimonial Section -->
+    </section>
+    <!-- End Testimonial Section -->
 
 
 
