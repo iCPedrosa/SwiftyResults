@@ -222,7 +222,7 @@
             <div class="text-center text-lg-start">
               <a href="#contact"
                 class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Schedule a free consultation</span>
+                <span>Begin Your Journey</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -1000,7 +1000,7 @@
 
         <header class="section-header">
           <!-- <h2>Contact</h2> -->
-          <p>Schedule Your Free Consultation</p>
+          <p>Begin Your Journey</p>
         </header>
 
 
