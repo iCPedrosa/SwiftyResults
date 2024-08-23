@@ -2034,23 +2034,48 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <h4>Our Newsletter</h4>
-            <p>Elevate your business with exclusive insights and special offers.</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="php/newsletter.php" method="post" class="newsletter-form">
-              <input type="email" name="email"><input type="hidden" name="OptedIn" value="true"><input type="submit"
-                value="Subscribe">
-            </form>
-          </div>
-        </div>
+  <div class="footer-newsletter">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <h4>Our Newsletter</h4>
+        <p>Elevate your business with exclusive insights and special offers.</p>
+      </div>
+      <div class="col-lg-6">
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" name="email" required>
+          <input type="hidden" name="OptedIn" value="true">
+          <input type="submit" value="Subscribe">
+        </form>
+        <div id="newsletter-message"></div>
       </div>
     </div>
-
+  </div>
+</div>
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  var email = this.querySelector('input[name="email"]').value;
+  var optedIn = this.querySelector('input[name="OptedIn"]').value;
+  
+  fetch('php/newsletter.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: 'email=' + encodeURIComponent(email) + '&OptedIn=' + encodeURIComponent(optedIn)
+  })
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('newsletter-message').innerHTML = data;
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    document.getElementById('newsletter-message').innerHTML = 'An error occurred. Please try again later.';
+  });
+});
+</script>
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
