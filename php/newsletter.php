@@ -51,9 +51,9 @@ try {
     // }
 
     // Validate OptedIn
-    if ($optedIn === 'true' || $optedIn === '1') {
+    if ($optedIn === '1' || $optedIn === '1') {
         $optedIn = true;
-    } elseif ($optedIn === 'false' || $optedIn === '0') {
+    } elseif ($optedIn === '0' || $optedIn === '0') {
         $optedIn = false;
     } else {
         throw new Exception("Invalid OptedIn value");
