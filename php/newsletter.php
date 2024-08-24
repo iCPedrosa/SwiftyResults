@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO newsletter (email, opted_in, subscription_date) VALUES (?, ?, NOW())");
+    $stmt = $conn->prepare("INSERT INTO newsletter (email, optedin) VALUES (:email, :opted_in)");
     $stmt->bind_param("ss", $email, $optedIn);
 
     // Execute the statement
