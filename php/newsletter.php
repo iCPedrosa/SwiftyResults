@@ -63,10 +63,10 @@ try {
         throw new Exception("Connection failed: " . $conn->connect_error);
     }
 
-    // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO newsletter (EmailAddress, OptedIn, CreatedDate) VALUES (?, ?, NOW())");
-    if (!$stmt) {
-        throw new Exception("Prepare failed: " . $conn->error);
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        throw new Exception("Connection failed: " . $conn->connect_error);
     }
 
     // Convert boolean to integer for MySQL
