@@ -1,5 +1,5 @@
 <?php
-// At the very top of the script, add these lines:
+// Enable error reporting for debugging
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 
 // Get the email and OptedIn values
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$optedIn = filter_input(INPUT_POST, 'OptedIn', FILTER_SANITIZE_STRING);
+$optedIn = filter_input(INPUT_POST, 'OptedIn', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
 
 // Validate email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -33,9 +33,8 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Validate OptedIn
-if ($optedIn !== 'true') {
-    send_response(false, "You must agree to subscribe");
-    $optedIn = 1;
+if ($optedIn === null) {
+    send_response(false, "Invalid OptedIn value");
 }
 
 // Create connection
@@ -47,12 +46,15 @@ if ($conn->connect_error) {
 }
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO Newsletter (EmailAddress, OptedIn, CreatedDate) VALUES (?, ?, NOW())");
+$stmt = $conn->prepare("INSERT INTO newsletter (EmailAddress, OptedIn, CreatedDate) VALUES (?, ?, NOW())");
 if (!$stmt) {
     send_response(false, "Prepare failed: " . $conn->error);
 }
 
-$stmt->bind_param("ss", $email, $optedIn);
+// Convert boolean to integer for MySQL
+$optedInInt = $optedIn ? 1 : 0;
+
+$stmt->bind_param("si", $email, $optedInInt);
 
 // Execute the statement
 if ($stmt->execute()) {

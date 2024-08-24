@@ -2044,7 +2044,7 @@
       <div class="col-lg-6">
         <form id="newsletter-form" class="newsletter-form">
           <input type="email" name="email" required>
-          <input type="hidden" name="OptedIn" value="true">
+          <input type="hidden" name="OptedIn" value="1">
           <input type="submit" value="Subscribe">
         </form>
         <div id="newsletter-message"></div>
