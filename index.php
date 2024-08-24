@@ -1444,7 +1444,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-1.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (3).jpg" class="testimonial-img" alt="">
                   <h3>Tom Reynolds</h3>
                   <h4>Owner, CleanWave Pools</h4>
                   <div class="stars">
@@ -1461,7 +1461,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (4).jpg" class="testimonial-img" alt="">
                   <h3>Linda Harris</h3>
                   <h4>Owner, GreenThumb Lawn Care</h4>
                   <div class="stars">
@@ -1478,7 +1478,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-3.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (12).jpg" class="testimonial-img" alt="">
                   <h3>Mark Stevens</h3>
                   <h4>Owner, SparkleClean Maid Service</h4>
                   <div class="stars">
@@ -1495,7 +1495,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-4.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (22).jpg" class="testimonial-img" alt="">
                   <h3>Susan Miller</h3>
                   <h4>Owner, PetCare Plus</h4>
                   <div class="stars">
@@ -1512,7 +1512,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-5.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (25).jpg" class="testimonial-img" alt="">
                   <h3>Jim Thompson</h3>
                   <h4>Owner, Pristine Auto Detailing</h4>
                   <div class="stars">
@@ -1529,7 +1529,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-6.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (18).jpg" class="testimonial-img" alt="">
                   <h3>Rachel Peterson</h3>
                   <h4>Owner, FreshBake Bakery</h4>
                   <div class="stars">
@@ -1546,7 +1546,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-7.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (1).jpg" class="testimonial-img" alt="">
                   <h3>David Rogers</h3>
                   <h4>Owner, ClearWater Pool Cleaning</h4>
                   <div class="stars">
@@ -1563,7 +1563,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-8.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (11).jpg" class="testimonial-img" alt="">
                   <h3>Karen White</h3>
                   <h4>Owner, Neighborhood Coffee Shop</h4>
                   <div class="stars">
@@ -1580,7 +1580,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-9.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (32).jpg" class="testimonial-img" alt="">
                   <h3>Mike Dawson</h3>
                   <h4>Owner, Sparkling Cleaners</h4>
                   <div class="stars">
@@ -1597,7 +1597,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonial-10.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/download (31).jpg" class="testimonial-img" alt="">
                   <h3>Sarah Bennett</h3>
                   <h4>Owner, HomeFix Handyman Services</h4>
                   <div class="stars">
