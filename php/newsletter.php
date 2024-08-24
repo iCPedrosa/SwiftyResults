@@ -1,5 +1,7 @@
 <?php
-// newsletter.php
+// At the very top of the script, add these lines:
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 // Set header to return JSON
 header('Content-Type: application/json');
@@ -45,6 +47,10 @@ if ($conn->connect_error) {
 
 // Prepare and bind
 $stmt = $conn->prepare("INSERT INTO newsletter (email, opted_in, subscription_date) VALUES (?, ?, NOW())");
+if (!$stmt) {
+    send_response(false, "Prepare failed: " . $conn->error);
+}
+
 $stmt->bind_param("ss", $email, $optedIn);
 
 // Execute the statement
