@@ -35,6 +35,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 // Validate OptedIn
 if ($optedIn !== 'true') {
     send_response(false, "You must agree to subscribe");
+    $optedIn = 1;
 }
 
 // Create connection
