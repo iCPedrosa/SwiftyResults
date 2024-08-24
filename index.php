@@ -2043,7 +2043,7 @@
       </div>
       <div class="col-lg-6">
         <form id="newsletter-form" class="newsletter-form">
-          <input type="email" name="email" required>
+          <input type="email" name="emailaddy" required>
           <input type="hidden" name="OptedIn" value="1">
           <input type="submit" value="Subscribe">
         </form>
@@ -2057,7 +2057,7 @@
 document.getElementById('newsletter-form').addEventListener('submit', function(e) {
   e.preventDefault();
   
-  var email = this.querySelector('input[name="email"]').value;
+  var email = this.querySelector('input[name="emailaddy"]').value;
   var optedIn = this.querySelector('input[name="OptedIn"]').value;
   
   fetch('php/newsletter.php', {
