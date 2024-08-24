@@ -11,28 +11,7 @@ window.toggleSection = function(sectionId, titleElement) {
   section.classList.toggle('show');
   titleElement.classList.toggle('active');
 };
-document.getElementById('newsletter-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  var email = this.querySelector('input[name="email"]').value;
-  var optedIn = this.querySelector('input[name="OptedIn"]').value;
-  
-  fetch('php/newsletter.php', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: 'email=' + encodeURIComponent(email) + '&OptedIn=' + encodeURIComponent(optedIn)
-  })
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('newsletter-message').innerHTML = data;
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-    document.getElementById('newsletter-message').innerHTML = 'An error occurred. Please try again later.';
-  });
-});
+
 (function() {
   "use strict";
 

@@ -2052,6 +2052,7 @@
     </div>
   </div>
 </div>
+
 <script>
 document.getElementById('newsletter-form').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -2066,13 +2067,21 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     },
     body: 'email=' + encodeURIComponent(email) + '&OptedIn=' + encodeURIComponent(optedIn)
   })
-  .then(response => response.text())
+  .then(response => response.json())
   .then(data => {
-    document.getElementById('newsletter-message').innerHTML = data;
+    var messageElement = document.getElementById('newsletter-message');
+    if (data.success) {
+      messageElement.innerHTML = data.message;
+      messageElement.style.color = 'green';
+    } else {
+      messageElement.innerHTML = 'Error: ' + data.message;
+      messageElement.style.color = 'red';
+    }
   })
   .catch((error) => {
     console.error('Error:', error);
     document.getElementById('newsletter-message').innerHTML = 'An error occurred. Please try again later.';
+    document.getElementById('newsletter-message').style.color = 'red';
   });
 });
 </script>
