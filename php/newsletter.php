@@ -3,17 +3,16 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Function to log errors
-function log_error($message) {
-    error_log(date('[Y-m-d H:i:s] ') . $message . PHP_EOL, 3, '/path/to/error.log');
-}
-
 // Set header to return JSON
 header('Content-Type: application/json');
 
 // Function to send JSON response
-function send_response($success, $message) {
-    echo json_encode(['success' => $success, 'message' => $message]);
+function send_response($success, $message, $debug = null) {
+    $response = ['success' => $success, 'message' => $message];
+    if ($debug !== null) {
+        $response['debug'] = $debug;
+    }
+    echo json_encode($response);
     exit;
 }
 
@@ -32,6 +31,15 @@ try {
     // Get the email and OptedIn values
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
     $optedIn = isset($_POST['OptedIn']) ? $_POST['OptedIn'] : '';
+
+    // Debug information
+    $debug = [
+        'raw_email' => $_POST['email'] ?? 'not set',
+        'trimmed_email' => $email,
+        'email_length' => strlen($email),
+        'is_valid_email' => filter_var($email, FILTER_VALIDATE_EMAIL) ? 'true' : 'false',
+        'opted_in_value' => $optedIn
+    ];
 
     // Validate email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -74,8 +82,7 @@ try {
     send_response(true, "Thank you for subscribing to our newsletter!");
 
 } catch (Exception $e) {
-    log_error($e->getMessage());
-    send_response(false, "An error occurred: " . $e->getMessage());
+    send_response(false, "An error occurred: " . $e->getMessage(), $debug ?? null);
 } finally {
     // Close statement and connection if they exist
     if (isset($stmt) && $stmt) {
