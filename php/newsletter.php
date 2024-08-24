@@ -46,7 +46,7 @@ if ($conn->connect_error) {
 }
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO newsletter (email, optedin, createddate) VALUES (?, ?, NOW())");
+$stmt = $conn->prepare("INSERT INTO newsletter (emailaddress, optedin, createddate) VALUES (?, ?, NOW())");
 if (!$stmt) {
     send_response(false, "Prepare failed: " . $conn->error);
 }
