@@ -46,9 +46,9 @@ try {
     $optedIn = isset($_POST['OptedIn']) ? $_POST['OptedIn'] : '';
 
     // Validate email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        throw new Exception("Invalid email format");
-    }
+    // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    //     throw new Exception("Invalid email format");
+    // }
 
     // Validate OptedIn
     if ($optedIn === 'true' || $optedIn === '1') {
