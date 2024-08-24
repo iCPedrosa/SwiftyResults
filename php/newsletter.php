@@ -19,8 +19,8 @@ function send_response($success, $message, $debug = null) {
 try {
     // Database connection details
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "icpedrosa";
+    $password = "pedr0sa123@@#!@#";
     $dbname = "SwiftyResults";
 
     // Check if the request is a POST request
