@@ -19,8 +19,8 @@ function send_response($success, $message, $debug = null) {
 try {
     // Database connection details
     $servername = "localhost";
-    $username = "icpedrosa";
-    $password = "S1ftyR3suls@3412!!";
+    $username = "root";
+    $password = "";
     $dbname = "SwiftyResults";
 
     // Check if the request is a POST request
@@ -30,7 +30,6 @@ try {
 
     // Get the email and OptedIn values
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-    echo $_POST['email'];
     $optedIn = isset($_POST['OptedIn']) ? $_POST['OptedIn'] : '';
 
     // Debug information

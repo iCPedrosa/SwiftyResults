@@ -2063,7 +2063,7 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
   fetch('php/newsletter.php', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Type': 'application/form-data',
     },
     body: 'email=' + encodeURIComponent(email) + '&OptedIn=' + encodeURIComponent(optedIn)
   })
