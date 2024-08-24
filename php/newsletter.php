@@ -51,13 +51,13 @@ try {
     // }
 
     // Validate OptedIn
-    if ($optedIn === '1' || $optedIn === '1') {
-        $optedIn = true;
-    } elseif ($optedIn === '0' || $optedIn === '0') {
-        $optedIn = false;
-    } else {
-        throw new Exception("Invalid OptedIn value");
-    }
+    // if ($optedIn === '1' || $optedIn === '1') {
+    //     $optedIn = true;
+    // } elseif ($optedIn === '0' || $optedIn === '0') {
+    //     $optedIn = false;
+    // } else {
+    //     throw new Exception("Invalid OptedIn value");
+    // }
 
     // Check if MySQLi is available
     if (!extension_loaded('mysqli')) {
