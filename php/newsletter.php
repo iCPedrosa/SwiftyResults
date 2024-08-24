@@ -24,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 }
 
 // Get the email and OptedIn values
-$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$optedIn = filter_input(INPUT_POST, 'OptedIn', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
+$email = isset($_POST['email']) ? trim($_POST['email']) : '';
+$optedIn = isset($_POST['OptedIn']) ? $_POST['OptedIn'] : '';
 
 // Validate email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
