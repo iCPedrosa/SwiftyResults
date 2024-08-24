@@ -30,6 +30,7 @@ try {
 
     // Get the email and OptedIn values
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    echo $_POST['email'];
     $optedIn = isset($_POST['OptedIn']) ? $_POST['OptedIn'] : '';
 
     // Debug information

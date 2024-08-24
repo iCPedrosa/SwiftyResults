@@ -2077,6 +2077,7 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
       messageElement.innerHTML = 'Error: ' + data.message;
       messageElement.style.color = 'red';
     }
+    console.log(data);
   })
   .catch((error) => {
     console.error('Error:', error);
