@@ -76,7 +76,7 @@ try {
             throw new Exception("Connection failed: " . $conn->connect_error);
         }
 
-        $stmt = $conn->prepare("INSERT INTO newsletter (EmailAddress, OptedIn, CreatedDate) VALUES (?, ?, NOW())");
+        $stmt = $conn->prepare("INSERT INTO Newsletter (EmailAddress, OptedIn, CreatedDate) VALUES (?, ?, NOW())");
         if (!$stmt) {
             throw new Exception("Prepare failed: " . $conn->error);
         }
