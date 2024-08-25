@@ -1008,7 +1008,19 @@
 
             <!-- F.A.Q List 2-->
             <div class="accordion accordion-flush" id="faqlist2">
-
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-delivery-time">
+                    How long does it typically take to deliver a web development service?
+                  </button>
+                </h2>
+                <div id="faq-content-delivery-time" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    The delivery time for web development services can vary depending on the project's complexity and scope. Simple websites might take 2-4 weeks, while more complex projects could require 1-2 months. We provide detailed timelines during the initial consultation and keep you updated throughout the development process to ensure timely delivery.
+                  </div>
+                </div>
+              </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1452,7 +1464,7 @@
                   </div>
                 </div>
                 <p>
-                  SwiftyResults helped us streamline our scheduling and customer communication. Our pool cleaning business has never been more efficient.
+                  SwiftyResults helped us streamline our scheduling and customer communication. They were very easy to work with and super flexible on revision requests, will definitely work with them again.
                 </p>
               </div>
             </div>
@@ -1463,13 +1475,13 @@
                 <div class="profile">
                   <img src="assets/img/testimonials/download (4).jpg" class="testimonial-img" alt="">
                   <h3>Linda Harris</h3>
-                  <h4>Owner, GreenThumb Lawn Care</h4>
+                  <h4>Owner, Harris Lawn Care</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                 </div>
                 <p>
-                  Thanks to SwiftyResults, our lawn care service is now fully booked weeks in advance. Their marketing strategies really work for small businesses.
+                  We're so happy with the results we got with Israel and the team at Swifty, they brought us great results and have just been a pleasure to partner with.
                 </p>
               </div>
             </div>
@@ -1480,13 +1492,30 @@
                 <div class="profile">
                   <img src="assets/img/testimonials/download (12).jpg" class="testimonial-img" alt="">
                   <h3>Mark Stevens</h3>
-                  <h4>Owner, SparkleClean Maid Service</h4>
+                  <h4>Owner, Handy Homes Service</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                 </div>
                 <p>
-                  SwiftyResults revamped our online presence, making it easier for customers to book our cleaning services. We've seen a big increase in new clients.
+                  They revamped our online presence, making it easier for customers to book our home repair services. Very happy with the work.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile">
+                  <img src="assets/img/testimonials/download (22).jpg" class="testimonial-img" alt="">
+                  <h3>Susan Miller</h3>
+                  <h4>Owner, PetCare Plus</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p>
+                  With SwiftyResults, we were able to optimize our pet sitting service scheduling system, saving us a ton of time.
                 </p>
               </div>
             </div>
