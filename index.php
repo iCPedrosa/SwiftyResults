@@ -1491,7 +1491,8 @@
               </div>
             </div>
 
-            <!-- <div class="swiper-slide">
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
                   <img src="assets/img/testimonials/download (22).jpg" class="testimonial-img" alt="">
@@ -1507,6 +1508,7 @@
               </div>
             </div>
 
+            <!-- Testimonial 5 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1523,6 +1525,7 @@
               </div>
             </div>
 
+            <!-- Testimonial 6 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1538,6 +1541,8 @@
                 </p>
               </div>
             </div>
+
+            <!-- Testimonial 7 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1554,6 +1559,7 @@
               </div>
             </div>
 
+            <!-- Testimonial 8 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1570,6 +1576,7 @@
               </div>
             </div>
 
+            <!-- Testimonial 9 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1586,6 +1593,7 @@
               </div>
             </div>
 
+            <!-- Testimonial 10 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1600,7 +1608,7 @@
                   The team at SwiftyResults truly understands the needs of small businesses. Their services have been invaluable to our handyman services company.
                 </p>
               </div>
-            </div> -->
+            </div>
 
 
             <!-- Continue with more testimonials -->
@@ -1709,6 +1717,43 @@
                 </div>
               </div><!-- End testimonial item -->
 
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    The SMS and email marketing campaigns executed by this team have yielded outstanding results for our
+                    business. Their strategic approach and attention to detail have significantly boosted our customer
+                    engagement and conversions. Highly recommended!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                    <h3>Daniel Adams</h3>
+                    <h4>Marketing Manager</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    The website development service provided by this company surpassed all expectations. They were
+                    attentive to our needs, responsive to feedback, and delivered a website that perfectly reflects our
+                    brand. Exceptional work!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                    <h3>Michael Johnson</h3>
+                    <h4>CEO</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
 
 
             </div>
