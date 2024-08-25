@@ -69,13 +69,8 @@ try {
         file_put_contents('newsletter_subscriptions.log', $log_message, FILE_APPEND);
         send_response(true, "Thank you for subscribing to our newsletter! (Data logged)");
     } else {
-        // MySQLi is available, proceed with database insertion
-        $servername = "localhost";
-        $username = "icpedrosa";
-        $password = "pedr0sa123@@#!@#";
-        $dbname = "SwiftyResults";
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
+
 
         if ($conn->connect_error) {
             throw new Exception("Connection failed: " . $conn->connect_error);
