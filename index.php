@@ -2057,15 +2057,12 @@
 document.getElementById('newsletter-form').addEventListener('submit', function(e) {
   e.preventDefault();
   
-  var email = this.querySelector('input[name="emailaddy"]').value;
-  var optedIn = this.querySelector('input[name="OptedIn"]').value;
+  var form = this;
+  var formData = new FormData(form);
   
   fetch('php/newsletter.php', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/form-data',
-    },
-    body: 'email=' + email + '&OptedIn=' + optedIn
+    body: formData
   })
   .then(response => response.json())
   .then(data => {

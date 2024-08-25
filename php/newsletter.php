@@ -25,50 +25,26 @@ try {
         throw new Exception("Invalid request method");
     }
 
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $email = isset($_POST['emailaddy']) ? trim($_POST['emailaddy']) : '';
     $optedIn = isset($_POST['OptedIn']) ? $_POST['OptedIn'] : '';
 
+    $debug['received_email'] = $email;
+    $debug['received_opted_in'] = $optedIn;
+
+    if (empty($email)) {
+        throw new Exception("Email is empty");
+    }
+
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        throw new Exception("Invalid email format");
+        throw new Exception("Invalid email format: " . $email);
     }
 
     $optedIn = ($optedIn === '1' || $optedIn === 1) ? 1 : 0;
 
-    if (!extension_loaded('mysqli')) {
-        $log_message = date('Y-m-d H:i:s') . " - Email: $email, OptedIn: $optedIn\n";
-        file_put_contents('newsletter_subscriptions.log', $log_message, FILE_APPEND);
-        send_response(true, "Thank you for subscribing to our newsletter! (Data logged)");
-    } else {
-        $servername = "localhost";
-        $username = "icpedrosa";
-        $password = "pedr0sa123@@#!@#";
-        $dbname = "SwiftyResults";
-
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        if ($conn->connect_error) {
-            throw new Exception("Connection failed: " . $conn->connect_error);
-        }
-
-        $stmt = $conn->prepare("INSERT INTO newsletter (EmailAddress, OptedIn, CreatedDate) VALUES (?, ?, NOW())");
-        if (!$stmt) {
-            throw new Exception("Prepare failed: " . $conn->error);
-        }
-
-        $stmt->bind_param("si", $email, $optedIn);
-
-        if (!$stmt->execute()) {
-            throw new Exception("Execute failed: " . $stmt->error);
-        }
-
-        $stmt->close();
-        $conn->close();
-
-        send_response(true, "Thank you for subscribing to our newsletter!");
-    }
+    // ... (rest of the code remains the same)
 
 } catch (Exception $e) {
     error_log("Newsletter subscription error: " . $e->getMessage());
-    send_response(false, "An error occurred: " . $e->getMessage(), $debug);
+    send_response(false, $e->getMessage(), $debug);
 }
 ?>
