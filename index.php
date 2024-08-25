@@ -2065,7 +2065,7 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     headers: {
       'Content-Type': 'application/form-data',
     },
-    body: 'email=' + encodeURIComponent(email) + '&OptedIn=' + encodeURIComponent(optedIn)
+    body: 'email=' + email + '&OptedIn=' + optedIn
   })
   .then(response => response.json())
   .then(data => {
