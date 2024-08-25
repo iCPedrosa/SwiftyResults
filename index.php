@@ -1491,8 +1491,7 @@
               </div>
             </div>
 
-            <!-- Testimonial 4 -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
                   <img src="assets/img/testimonials/download (22).jpg" class="testimonial-img" alt="">
@@ -1508,7 +1507,6 @@
               </div>
             </div>
 
-            <!-- Testimonial 5 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1525,7 +1523,6 @@
               </div>
             </div>
 
-            <!-- Testimonial 6 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1541,8 +1538,6 @@
                 </p>
               </div>
             </div>
-
-            <!-- Testimonial 7 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1559,7 +1554,6 @@
               </div>
             </div>
 
-            <!-- Testimonial 8 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1576,7 +1570,6 @@
               </div>
             </div>
 
-            <!-- Testimonial 9 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1593,7 +1586,6 @@
               </div>
             </div>
 
-            <!-- Testimonial 10 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="profile">
@@ -1608,7 +1600,7 @@
                   The team at SwiftyResults truly understands the needs of small businesses. Their services have been invaluable to our handyman services company.
                 </p>
               </div>
-            </div>
+            </div> -->
 
 
             <!-- Continue with more testimonials -->
