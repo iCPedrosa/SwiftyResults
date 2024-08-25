@@ -12,9 +12,12 @@ function send_response($success, $message, $debug = null) {
     exit;
 }
 
+// Add the raw input capture here, before processing any $_POST data
+$raw_input = file_get_contents('php://input');
+
 $debug = [
     'post_data' => $_POST,
-    'raw_input' => file_get_contents('php://input'),
+    'raw_input' => $raw_input, // Add the raw input to the debug information
     'request_method' => $_SERVER['REQUEST_METHOD'],
     'content_type' => $_SERVER['CONTENT_TYPE'] ?? 'not set',
     'mysqli_available' => extension_loaded('mysqli') ? 'Yes' : 'No',
@@ -31,17 +34,7 @@ try {
     $debug['received_email'] = $email;
     $debug['received_opted_in'] = $optedIn;
 
-    if (empty($email)) {
-        throw new Exception("Email is empty");
-    }
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        throw new Exception("Invalid email format: " . $email);
-    }
-
-    $optedIn = ($optedIn === '1' || $optedIn === 1) ? 1 : 0;
-
-    // ... (rest of the code remains the same)
+    // ... rest of your code ...
 
 } catch (Exception $e) {
     error_log("Newsletter subscription error: " . $e->getMessage());
