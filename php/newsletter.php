@@ -5,6 +5,9 @@ ini_set('display_errors', 1);
 
 // Set header to return JSON
 header('Content-Type: application/json');
+
+// Define a constant to allow access to the config file
+define('ALLOWED_ACCESS', true);
 require_once '/home/pva9rysaenn6/app/db-config-file.php';
 // Function to send JSON response
 function send_response($success, $message, $debug = null) {
