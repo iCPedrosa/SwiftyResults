@@ -2004,9 +2004,9 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
             <p>Where success is just a click away.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61561148482057" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/swifty-results/" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
 
