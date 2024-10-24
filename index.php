@@ -615,19 +615,19 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <i class="ri-discuss-line icon"></i>
-                  <h3>Shopify Solutions</h3>
-                  <p>Transform your e-commerce experience with tailored Shopify solutions. Streamline your store setup, enhance user experience, and boost sales.</p>
+                  <h3>Digital Marketing</h3>
+                  <p>Boost your business with tailored digital marketing and advertising strategies that drive traffic and increase sales.</p>
                   <a href="javascript:void(0)" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
                 </div>
                 <div class="flip-card-back">
-                  <h3>Shopify Solutions</h3>
+                <h3>Digital Marketing</h3>
 
-                  <p>Fully functional Shopify store
-                    <br>Custom theme design files
-                    <br> Product catalog setup
-                    <br> Payment gateway integration
-                    <br> Training documentation for store management
-                  </p>
+                <p>Comprehensive marketing strategy development
+<br>Targeted social media ad campaigns
+<br>Search engine optimization (SEO)
+<br>Google Ads and pay-per-click (PPC) management
+<br>Analytics and performance tracking
+<br>Brand awareness and reputation management</p> 
 
                   <a href="javascript:void(0)" class="read-less"><span>Show Less</span> <i class="bi bi-arrow-left"></i></a>
                 </div>
