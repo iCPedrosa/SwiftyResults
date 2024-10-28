@@ -5,18 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SwiftyResults</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- Título e meta tags para SEO -->
+  <title>SwiftyResults | Trusted Digital Solutions for Growth</title>
+  <meta content="SwiftyResults is your trusted partner for digital growth, offering services from website development to digital marketing for businesses of all sizes." name="description">
+  <meta content="SwiftyResults, website development, digital marketing, CRM, automation, SEO" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/logoswiftyresults.png" rel="icon">
   <link href="assets/img/logoswiftyresults.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -29,16 +28,26 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
-  <!-- =======================================================
-  * Template Name: SwiftyResults
-  * Template URL: https://bootstrapmade.com/SwiftyResults-bootstrap-startup-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Dados Estruturados Schema.org para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SwiftyResults",
+    "url": "https://swiftyresults.com",
+    "logo": "https://swiftyresults.com/assets/img/logoswiftyresults.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/swifty-results/",
+      "https://www.facebook.com/profile.php?id=61561148482057"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "icpedrosa@swiftyresults.com",
+      "contactType": "Customer Support"
+    }
+  }
+  </script>
 </head>
-
 <body>
   <!-- ======= CHAT BOT ================================ ======= -->
   <title>Chat Button</title>
