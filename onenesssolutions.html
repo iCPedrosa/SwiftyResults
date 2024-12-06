@@ -263,53 +263,77 @@
             background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
                         url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80');
         }
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                background-color: rgba(45, 52, 54, 0.95);
+                padding: 1rem;
+                border-radius: 0.5rem;
+                margin-top: 1rem;
+            }
+            
+            .navbar.scrolled .navbar-collapse {
+                background-color: white;
+            }
+            .process-number {
+            position: absolute;
+            top: -20px;
+            left: 0px;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <svg class="logo-container me-2" viewBox="0 0 200 200">
-                    <path d="M 100 40 A 60 60 0 1 1 100 160 A 60 60 0 1 1 100 40" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-                    <line x1="90" y1="45" x2="90" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-                    <line x1="110" y1="45" x2="110" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-                    <!-- Ladder rungs -->
-                    <line x1="90" y1="55" x2="110" y2="55" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                    <line x1="90" y1="75" x2="110" y2="75" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                    <line x1="90" y1="95" x2="110" y2="95" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                    <line x1="90" y1="115" x2="110" y2="115" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                    <line x1="90" y1="135" x2="110" y2="135" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                </svg>
-                Oneness Solutions
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#process">Process</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#case-studies">Case Studies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <svg class="logo-container me-2" viewBox="0 0 200 200">
+                        <path d="M 100 40 A 60 60 0 1 1 100 160 A 60 60 0 1 1 100 40" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                        <line x1="90" y1="45" x2="90" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                        <line x1="110" y1="45" x2="110" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                        <!-- Ladder rungs -->
+                        <line x1="90" y1="55" x2="110" y2="55" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="75" x2="110" y2="75" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="95" x2="110" y2="95" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="115" x2="110" y2="115" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="135" x2="110" y2="135" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    Oneness Solutions
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#process">Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#case-studies">Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -659,3 +683,19 @@
         </div>
     </div>
 </footer>
+    <!-- Add Bootstrap JavaScript before closing body tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Add navbar scroll effect script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
