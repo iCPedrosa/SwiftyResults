@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oneness Solutions - Premium Business Consulting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2D3436;
+            --secondary: #636e72;
+            --accent: #b2bec3;
+            --light: #f5f6fa;
+            --dark: #2d3436;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+        }
+
+        .logo-container {
+            width: 50px;
+            height: 50px;
+        }
+
+        .hero {
+			background: linear-gradient(rgba(45, 52, 54, 0.8), rgba(45, 52, 54, 0.8)), 
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        .service-card {
+            padding: 2rem;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card {
+            background: var(--light);
+            padding: 3rem;
+            margin: 2rem 0;
+        }
+
+        .process-step {
+            position: relative;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            margin: 1rem 0;
+        }
+
+        .process-number {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stats {
+            background-color: var(--light);
+            padding: 100px 0;
+        }
+
+        .counter {
+            font-size: 3.5rem;
+            font-weight: 200;
+            color: var(--primary);
+        }
+
+        .navbar {
+            transition: all 0.3s ease;
+            padding: 1.5rem 0;
+        }
+
+        .navbar.scrolled {
+            background-color: white !important;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem;
+        }
+
+        .navbar.scrolled .nav-link {
+            color: var(--dark) !important;
+        }
+
+        .btn-primary {
+            background-color: transparent;
+            border: 2px solid white;
+            padding: 0.75rem 2rem;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            color: var(--primary);
+            border-color: white;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            border: none;
+            border-bottom: 1px solid var(--accent);
+            border-radius: 0;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+		/* Tech Transformation */
+		.case-study img {
+			content:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80');
+		}
+
+		/* Retail Chain */
+		.case-img2 img {
+			content:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80');
+		}
+
+		/* Healthcare Innovation */
+		.case-img3 img {
+			content:url('https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&q=80');
+		}
+
+        .case-study {
+            position: relative;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .case-study img {
+            transition: all 0.3s ease;
+        }
+
+        .case-study:hover img {
+            transform: scale(1.1);
+        }
+
+        .case-study-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+        }
+
+        .team-member {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .team-member img {
+            width: 200px;
+            max-width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        /* Managing Director */
+        .tm1 img {
+            content:url('https://media.licdn.com/dms/image/v2/D5603AQFSFTDJx-_hPg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1675744314871?e=1738800000&v=beta&t=EbQdhCjy_dRuon1E1HbVKjd7AyhyqenCX92wjnY1J8c');
+        }
+
+        /* Strategy Lead */
+        .tm2 img {
+            content:url('https://media.licdn.com/dms/image/v2/D5603AQFSFTDJx-_hPg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1675744314871?e=1738800000&v=beta&t=EbQdhCjy_dRuon1E1HbVKjd7AyhyqenCX92wjnY1J8c');
+        }
+
+        /* Operations Director */
+        .tm3 img {
+            content:url('https://media.licdn.com/dms/image/v2/D5603AQFSFTDJx-_hPg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1675744314871?e=1738800000&v=beta&t=EbQdhCjy_dRuon1E1HbVKjd7AyhyqenCX92wjnY1J8c');
+        }
+
+        .form-floating > .form-control,
+        .form-floating > .form-select {
+            border: 1px solid #dee2e6;
+            border-radius: 0;
+            height: calc(3.5rem + 2px);
+            line-height: 1.25;
+        }
+
+        .form-floating > textarea.form-control {
+            height: 150px;
+        }
+
+        .form-floating > label {
+            padding: 1rem 0.75rem;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: var(--primary);
+            box-shadow: none;
+        }
+
+        .btn-dark {
+            padding: 1rem 2rem;
+            border-radius: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-dark:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .social-links a {
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary) !important;
+            transform: translateY(-2px);
+        }
+        .contact-section {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+                        url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80');
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <svg class="logo-container me-2" viewBox="0 0 200 200">
+                    <path d="M 100 40 A 60 60 0 1 1 100 160 A 60 60 0 1 1 100 40" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                    <line x1="90" y1="45" x2="90" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                    <line x1="110" y1="45" x2="110" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                    <!-- Ladder rungs -->
+                    <line x1="90" y1="55" x2="110" y2="55" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="90" y1="75" x2="110" y2="75" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="90" y1="95" x2="110" y2="95" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="90" y1="115" x2="110" y2="115" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="90" y1="135" x2="110" y2="135" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                Oneness Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#case-studies">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-light mb-4">Elevate Your Business Vision</h1>
+                    <p class="lead mb-5">Strategic solutions crafted to transform challenges into opportunities for sustainable growth.</p>
+                    <button class="btn btn-primary">Schedule a Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+<section class="py-5" id="services">
+    <div class="container py-5">
+        <h2 class="section-title text-center">Leadership Development Solutions</h2>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="service-card h-100">
+                    <i class="fas fa-users fa-2x mb-4 text-primary"></i>
+                    <h3 class="h4 mb-3">Leadership Training</h3>
+                    <p>Transform your potential through proven leadership principles, helping you influence others and create lasting impact in your organization.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="service-card h-100">
+                    <i class="fas fa-brain fa-2x mb-4 text-primary"></i>
+                    <h3 class="h4 mb-3">Personal Growth</h3>
+                    <p>Develop your leadership capacity through intentional daily growth, mastering the 15 invaluable laws of growth that drive success.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="service-card h-100">
+                    <i class="fas fa-handshake fa-2x mb-4 text-primary"></i>
+                    <h3 class="h4 mb-3">Team Development</h3>
+                    <p>Build high-performance teams using the 17 indisputable laws of teamwork, creating a culture of leadership and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="py-5 bg-light" id="process">
+    <div class="container py-5">
+        <h2 class="section-title">The Leadership Journey</h2>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3 class="h5 mb-3">Assessment</h3>
+                    <p>Identify your leadership strengths and growth areas through proven evaluation tools.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3 class="h5 mb-3">Development</h3>
+                    <p>Create a personalized leadership growth plan based on timeless principles.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3 class="h5 mb-3">Application</h3>
+                    <p>Put leadership principles into practice through guided implementation.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3 class="h5 mb-3">Multiplication</h3>
+                    <p>Develop others and create a legacy of leadership in your organization.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Studies Section -->
+<section class="py-5" id="case-studies">
+    <div class="container py-5">
+        <h2 class="section-title">Leadership Impact Stories</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="case-study">
+                    <img src="" alt="Executive Leadership Transformation" class="img-fluid">
+                    <div class="case-study-content">
+                        <h3 class="h5">Executive Leadership Transformation</h3>
+                        <p>200% increase in team engagement</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="case-study case-img2">
+                    <img alt="Organizational Culture Shift" class="img-fluid">
+                    <div class="case-study-content">
+                        <h3 class="h5">Organizational Culture Shift</h3>
+                        <p>85% improvement in leadership effectiveness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="case-study case-img3">
+                    <img alt="Non-Profit Leadership Development" class="img-fluid">
+                    <div class="case-study-content">
+                        <h3 class="h5">Non-Profit Leadership Development</h3>
+                        <p>300% increase in volunteer retention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light" id="team">
+        <div class="container py-5">
+            <h2 class="section-title">Our Leadership</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member tm1">
+                        <img src="/api/placeholder/200/200" alt="Team Member 1">
+                        <h3 class="h4">Antonio Dominguez</h3>
+                        <p class="text-muted">Managing Director</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member tm2">
+                        <img src="/api/placeholder/200/200" alt="Team Member 2">
+                        <h3 class="h4">Antonio Dominguez</h3>
+                        <p class="text-muted">Strategy Lead</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member tm3">
+                        <img src="/api/placeholder/200/200" alt="Team Member 3">
+                        <h3 class="h4">Antonio Dominguez</h3>
+                        <p class="text-muted">Operations Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="py-5 contact-section" id="contact">
+    <div class="container py-5 ">
+        <div class="row justify-content-between">
+            <!-- Contact Info Column -->
+            <div class="col-lg-4 mb-5 mb-lg-0 pt-5">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="lead mb-5">Ready to transform your business? Let's start a conversation about your goals.</p>
+                
+                <div class="contact-info">
+                    <div class="d-flex mb-4">
+                        <div class="icon-box bg-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-1">Visit Us</h5>
+                            <p class="text-muted mb-0">123 Business Avenue, Suite 100<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-box bg-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fas fa-phone text-primary"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-1">Call Us</h5>
+                            <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-box bg-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fas fa-envelope text-primary"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-1">Email Us</h5>
+                            <p class="text-muted mb-0">contact@onenesssolutions.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links mt-5">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form Column -->
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="h4 mb-4">Send us a Message</h3>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
+                                        <label for="floatingName">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email">
+                                        <label for="floatingEmail">Your Email</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingCompany" placeholder="Company Name">
+                                    <label for="floatingCompany">Company Name</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingService">
+                                        <option selected disabled>Select a service</option>
+                                        <option>Strategic Planning</option>
+                                        <option>Process Optimization</option>
+                                        <option>Change Management</option>
+                                        <option>Digital Transformation</option>
+                                        <option>Other Services</option>
+                                    </select>
+                                    <label for="floatingService">Service of Interest</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Your Message" id="floatingMessage" style="height: 150px"></textarea>
+                                    <label for="floatingMessage">Your Message</label>
+                                </div>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="privacyCheck">
+                                <label class="form-check-label text-muted" for="privacyCheck">
+                                    I agree to the privacy policy and terms of service
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark btn-lg w-100">
+                                Send Message
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+    <div class="container pt-5">
+        <div class="row g-4">
+            <!-- Company Info -->
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center mb-3">
+                    <svg class="logo-container me-2" width="40" height="40" viewBox="0 0 200 200">
+                        <path d="M 100 40 A 60 60 0 1 1 100 160 A 60 60 0 1 1 100 40" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                        <line x1="90" y1="45" x2="90" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                        <line x1="110" y1="45" x2="110" y2="155" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                        <line x1="90" y1="55" x2="110" y2="55" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="75" x2="110" y2="75" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="95" x2="110" y2="95" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="115" x2="110" y2="115" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="90" y1="135" x2="110" y2="135" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    <h3 class="h5 mb-0">Oneness Solutions</h3>
+                </div>
+                <p class="text-muted mb-4">Transforming businesses through strategic innovation and sustainable growth solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-lg-2">
+                <h5 class="mb-4">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#home" class="text-muted text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="#services" class="text-muted text-decoration-none">Services</a></li>
+                    <li class="mb-2"><a href="#process" class="text-muted text-decoration-none">Process</a></li>
+                    <li class="mb-2"><a href="#case-studies" class="text-muted text-decoration-none">Case Studies</a></li>
+                    <li class="mb-2"><a href="#team" class="text-muted text-decoration-none">Team</a></li>
+                </ul>
+            </div>
+            
+            <!-- Services -->
+            <div class="col-lg-2">
+                <h5 class="mb-4">Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Strategic Planning</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Process Optimization</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Change Management</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Digital Transformation</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Market Analysis</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="col-lg-4">
+                <h5 class="mb-4">Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        123 Business Avenue, Suite 100<br>
+                        New York, NY 10001
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-phone me-2"></i>
+                        +1 (555) 123-4567
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-envelope me-2"></i>
+                        contact@onenesssolutions.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="row mt-5 pt-4 border-top border-secondary">
+            <div class="col-md-6">
+                <p class="text-muted mb-md-0">&copy; 2024 Oneness Solutions. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-muted text-decoration-none me-3">Terms of Service</a>
+                <a href="#" class="text-muted text-decoration-none">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
